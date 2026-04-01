@@ -1,5 +1,5 @@
 import { Target, Eye, Shield } from "lucide-react";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { motion } from "framer-motion";
 
 const cards = [
   { icon: Target, title: "Missão", text: "Fornecer peças e componentes de alta qualidade para equipamentos pesados, assegurando a continuidade operacional dos nossos clientes nos setores de mineração, construção, energia e logística." },
@@ -8,28 +8,64 @@ const cards = [
 ];
 
 const AboutSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" }
+    },
+  };
+
   return (
-    <section id="sobre" className="section-padding bg-card">
-      <div ref={ref} className={`container mx-auto transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <div className="text-center mb-16">
-          <span className="text-primary font-semibold text-sm uppercase tracking-widest">Quem Somos</span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold mt-3 mb-6">Sobre a MPS Machinery</h2>
-          <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
+    <section id="sobre" className="section-padding bg-muted/30">
+      <div className="container mx-auto">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-20"
+        >
+          <span className="text-primary font-bold text-sm uppercase tracking-[0.2em]">Quem Somos</span>
+          <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-8 text-foreground">Sobre a MPS Machinery</h2>
+          <p className="text-muted-foreground max-w-3xl mx-auto text-lg md:text-xl leading-relaxed font-medium">
             A MPS Machinery é uma empresa moçambicana especializada no fornecimento de peças multimarcas para equipamentos pesados. Com uma rede internacional de fornecedores e forte presença local, garantimos soluções completas para os setores mais exigentes da indústria.
           </p>
-        </div>
-        <div className="grid md:grid-cols-3 gap-8">
-          {cards.map((c, i) => (
-            <div key={c.title} className={`bg-background border border-border rounded-xl p-8 hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 ${isVisible ? "animate-fade-in" : "opacity-0"}`} style={{ animationDelay: `${i * 150}ms` }}>
-              <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5">
-                <c.icon className="text-primary" size={28} />
+        </motion.div>
+
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid md:grid-cols-3 gap-8"
+        >
+          {cards.map((c) => (
+            <motion.div 
+              key={c.title} 
+              variants={cardVariants}
+              whileHover={{ y: -10, transition: { duration: 0.2 } }}
+              className="bg-background border border-border/80 rounded-2xl p-10 hover:border-primary/40 transition-all shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] group"
+            >
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <c.icon size={32} className="text-primary group-hover:text-white" />
               </div>
-              <h3 className="font-display text-xl font-bold mb-3">{c.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{c.text}</p>
-            </div>
+              <h3 className="font-display text-2xl font-bold mb-4 text-foreground">{c.title}</h3>
+              <p className="text-muted-foreground text-lg leading-relaxed font-medium">{c.text}</p>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

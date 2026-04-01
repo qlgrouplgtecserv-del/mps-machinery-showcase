@@ -1,4 +1,4 @@
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { motion } from "framer-motion";
 
 const clients = [
   "Kenmare Resources", "Mota-Engil", "Syrah Resources", "Capitol Resources", "TotalEnergies",
@@ -11,22 +11,45 @@ const clients = [
 ];
 
 const ClientsSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
   return (
-    <section className="section-padding">
-      <div ref={ref} className={`container mx-auto transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <div className="text-center mb-16">
-          <span className="text-primary font-semibold text-sm uppercase tracking-widest">Confiança Comprovada</span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold mt-3">Clientes e Parceiros</h2>
-          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">Empresas líderes em mineração, energia, construção e logística que confiam na MPS Machinery.</p>
-        </div>
-        <div className="flex flex-wrap justify-center gap-3">
-          {clients.map((c, i) => (
-            <span key={c} className={`bg-card border border-border rounded-lg px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:border-primary/40 transition-all cursor-default ${isVisible ? "animate-fade-in" : "opacity-0"}`} style={{ animationDelay: `${i * 30}ms` }}>
+    <section className="section-padding bg-muted/10">
+      <div className="container mx-auto">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <span className="text-secondary-dark font-bold text-sm uppercase tracking-[0.2em] drop-shadow-sm">Confiança Comprovada</span>
+          <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-8 text-foreground">Clientes e Parceiros</h2>
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto text-lg leading-relaxed font-medium">
+            Empresas líderes em mineração, energia, construção e logística que confiam na MPS Machinery.
+          </p>
+        </motion.div>
+
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            visible: { transition: { staggerChildren: 0.02 } }
+          }}
+          className="flex flex-wrap justify-center gap-3"
+        >
+          {clients.map((c) => (
+            <motion.span 
+              key={c} 
+              variants={{
+                hidden: { opacity: 0, scale: 0.8 },
+                visible: { opacity: 1, scale: 1 }
+              }}
+              whileHover={{ scale: 1.1, backgroundColor: "white", color: "hsl(var(--primary))", borderColor: "hsl(var(--primary) / 0.5)", boxShadow: "0 10px 20px -5px rgba(0,0,0,0.1)" }}
+              className="bg-white border border-border/80 rounded-full px-5 py-2.5 text-sm font-bold text-foreground transition-all cursor-default shadow-[0_2px_10px_rgba(0,0,0,0.02)]"
+            >
               {c}
-            </span>
+            </motion.span>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,33 +1,62 @@
-import { Pickaxe, Building2, Zap, Truck } from "lucide-react";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Building2, HardHat, Zap, Truck } from "lucide-react";
+import { motion } from "framer-motion";
 
 const sectors = [
-  { icon: Pickaxe, title: "Mineração", desc: "Peças e componentes para operações de mineração de grande escala, incluindo escavadoras, dumpers e equipamentos de perfuração." },
-  { icon: Building2, title: "Construção", desc: "Soluções completas para o setor de construção civil e obras públicas, desde retroescavadoras até motoniveladoras." },
-  { icon: Zap, title: "Energia", desc: "Componentes para geradores, transformadores e infraestrutura energética em projetos de grande porte." },
-  { icon: Truck, title: "Logística Industrial", desc: "Peças para frotas de camiões, empilhadoras e equipamentos de movimentação de cargas em terminais e armazéns." },
+  { icon: Building2, title: "Mineração", text: "Suporte completo para frotas de mineração a céu aberto e subterrâneas, com peças de alto desempenho." },
+  { icon: HardHat, title: "Construção Pesada", text: "Soluções para terraplenagem, pavimentação e infraestrutura, garantindo disponibilidade máxima." },
+  { icon: Zap, title: "Energia", text: "Componentes para geradores e equipamentos de manutenção de infraestrutura energética." },
+  { icon: Truck, title: "Logística e Portos", text: "Peças para empilhadeiras de grande porte, guindastes e frotas de transporte rodoviário." },
 ];
 
 const SectorsSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
   return (
-    <section id="setores" className="section-padding bg-card">
-      <div ref={ref} className={`container mx-auto transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <div className="text-center mb-16">
-          <span className="text-primary font-semibold text-sm uppercase tracking-widest">Onde Atuamos</span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold mt-3">Setores de Atuação</h2>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {sectors.map((s, i) => (
-            <div key={s.title} className={`group bg-background border border-border rounded-xl p-8 hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 ${isVisible ? "animate-fade-in" : "opacity-0"}`} style={{ animationDelay: `${i * 120}ms` }}>
-              <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <s.icon className="text-primary" size={32} />
+    <section id="setores" className="section-padding bg-muted/20">
+      <div className="container mx-auto">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-20"
+        >
+          <span className="text-secondary-dark font-bold text-sm uppercase tracking-[0.2em] drop-shadow-sm flex items-center justify-center gap-2">
+            <span className="w-8 h-px bg-primary"></span>
+            Onde Atuamos
+            <span className="w-8 h-px bg-primary"></span>
+          </span>
+          <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-8 text-foreground">Setores de Especialidade</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed font-medium">
+            Nossa experiência abrange as indústrias mais críticas de Moçambique, fornecendo o suporte necessário para operações ininterruptas.
+          </p>
+        </motion.div>
+
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            visible: { transition: { staggerChildren: 0.15 } }
+          }}
+          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
+          {sectors.map((s) => (
+            <motion.div 
+              key={s.title} 
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+              }}
+              whileHover={{ y: -10 }}
+              className="bg-white border text-left border-border/60 border-t-4 border-t-primary rounded-2xl p-8 hover:border-border transition-all shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgba(234,179,8,0.15)] group relative overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 transition-transform group-hover:scale-150 duration-500" />
+              <div className="w-14 h-14 bg-primary text-primary-foreground rounded-xl flex items-center justify-center mb-6 shadow-md shadow-primary/20 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+                <s.icon size={28} />
               </div>
-              <h3 className="font-display text-xl font-bold mb-3">{s.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
-            </div>
+              <h3 className="font-display text-xl font-bold mb-3 text-foreground">{s.title}</h3>
+              <p className="text-muted-foreground leading-relaxed font-medium text-sm">{s.text}</p>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

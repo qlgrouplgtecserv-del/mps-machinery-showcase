@@ -1,5 +1,5 @@
 import { MapPin } from "lucide-react";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { motion } from "framer-motion";
 
 const locations = [
   { name: "Maputo", tag: "Sede", top: "82%", left: "58%" },
@@ -11,46 +11,112 @@ const locations = [
 ];
 
 const LogisticsSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
-  return (
-    <section id="logistica" className="section-padding">
-      <div ref={ref} className={`container mx-auto transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <div className="text-center mb-16">
-          <span className="text-primary font-semibold text-sm uppercase tracking-widest">Presença Nacional</span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold mt-3">Logística e Cobertura</h2>
-        </div>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Stylized map */}
-          <div className="relative bg-card border border-border rounded-2xl p-8 aspect-[3/4] max-w-md mx-auto w-full">
-            <div className="absolute inset-8 border-2 border-primary/10 rounded-[40%_60%_55%_45%/70%_40%_60%_30%]" />
-            {locations.map((loc, i) => (
-              <div key={loc.name} className={`absolute flex flex-col items-center ${isVisible ? "animate-fade-in" : "opacity-0"}`} style={{ top: loc.top, left: loc.left, animationDelay: `${i * 200}ms` }}>
-                <div className="relative">
-                  <MapPin className="text-primary" size={24} fill="hsl(197 100% 40% / 0.3)" />
-                  {loc.tag && <span className="absolute -top-1 -right-1 w-3 h-3 bg-secondary rounded-full animate-pulse" />}
-                </div>
-                <span className="text-xs font-semibold mt-1 whitespace-nowrap">{loc.name}</span>
-                {loc.tag && <span className="text-[10px] text-secondary font-bold">{loc.tag}</span>}
-              </div>
-            ))}
-          </div>
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1 },
+    },
+  };
 
-          <div>
-            <h3 className="font-display text-2xl font-bold mb-6">Cobertura em Todo Moçambique</h3>
-            <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
+  const pinVariants = {
+    hidden: { opacity: 0, scale: 0, y: 10 },
+    visible: { 
+      opacity: 1, 
+      scale: 1, 
+      y: 0,
+      transition: { type: "spring", stiffness: 260, damping: 20 } 
+    },
+  };
+
+  return (
+    <section id="logistica" className="section-padding bg-background">
+      <div className="container mx-auto">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <span className="text-primary font-bold text-sm uppercase tracking-[0.2em]">Presença Nacional</span>
+          <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-8 text-foreground">Logística e Cobertura</h2>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          {/* Stylized map */}
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="relative bg-muted/20 border border-border/80 rounded-3xl p-10 aspect-[3/4] max-w-md mx-auto w-full shadow-[0_8px_30px_rgb(0,0,0,0.02)]"
+          >
+            <div className="absolute inset-10 border-2 border-primary/10 rounded-[40%_60%_55%_45%/70%_40%_60%_30%] animate-pulse" />
+            <motion.div 
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              {locations.map((loc) => (
+                <motion.div 
+                  key={loc.name} 
+                  variants={pinVariants}
+                  className="absolute flex flex-col items-center group cursor-pointer" 
+                  style={{ top: loc.top, left: loc.left }}
+                  whileHover={{ scale: 1.2, zIndex: 10 }}
+                >
+                  <div className="relative">
+                    <MapPin className="text-primary group-hover:text-secondary transition-colors" size={28} fill="currentColor" fillOpacity={0.2} />
+                    {loc.tag && <span className="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full border-2 border-white shadow-lg" />}
+                  </div>
+                  <motion.span 
+                    initial={{ opacity: 0, y: 5 }}
+                    whileHover={{ opacity: 1, y: 0 }}
+                    className="absolute top-8 bg-white border border-border px-2 py-1 rounded shadow-xl text-[10px] font-bold whitespace-nowrap z-20 pointer-events-none text-foreground"
+                  >
+                    {loc.name} {loc.tag && `(${loc.tag})`}
+                  </motion.span>
+                </motion.div>
+              ))}
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h3 className="font-display text-3xl font-bold mb-8 text-foreground">Cobertura em Todo Moçambique</h3>
+            <p className="text-muted-foreground mb-10 leading-relaxed text-lg md:text-xl font-medium">
               Com base em Maputo e pontos estratégicos de distribuição em todo o país, garantimos entregas rápidas e eficientes para as operações mais remotas.
             </p>
-            <div className="space-y-4">
-              {locations.map((loc) => (
-                <div key={loc.name} className="flex items-center gap-4 bg-card border border-border rounded-lg px-5 py-3 hover:border-primary/40 transition-colors">
-                  <MapPin className="text-primary shrink-0" size={18} />
-                  <span className="font-medium">{loc.name}</span>
-                  {loc.tag && <span className="ml-auto text-xs bg-secondary/20 text-secondary px-2 py-0.5 rounded-full font-semibold">{loc.tag}</span>}
-                </div>
+            <div className="grid grid-cols-2 gap-4">
+              {locations.map((loc, i) => (
+                <motion.div 
+                  key={loc.name}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  className="flex items-center gap-4 bg-muted/50 border border-border/80 rounded-xl px-5 py-4 hover:border-primary/40 hover:bg-white hover:shadow-md transition-all group"
+                >
+                  <MapPin className="text-primary group-hover:scale-110 transition-transform" size={20} />
+                  <span className="font-bold text-sm md:text-base text-foreground">{loc.name}</span>
+                  {loc.tag && <span className="ml-auto text-[10px] bg-secondary/20 text-secondary-dark px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">{loc.tag}</span>}
+                </motion.div>
               ))}
             </div>
-            <p className="text-muted-foreground mt-6 text-sm italic">Expansão prevista para a África do Sul em breve.</p>
-          </div>
+            <motion.p 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1 }}
+              className="text-muted-foreground mt-10 text-sm font-bold flex items-center gap-2"
+            >
+              <span className="w-8 h-px bg-primary/30" /> Expansão prevista para a África do Sul em breve.
+            </motion.p>
+          </motion.div>
         </div>
       </div>
     </section>
