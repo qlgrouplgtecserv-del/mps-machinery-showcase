@@ -37,7 +37,11 @@ const AboutSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <span className="text-primary font-bold text-sm uppercase tracking-[0.2em]">Quem Somos</span>
+          <span className="text-secondary-dark font-bold text-sm uppercase tracking-[0.2em] flex items-center justify-center gap-2">
+            <span className="w-8 h-px bg-primary"></span>
+            Quem Somos
+            <span className="w-8 h-px bg-primary"></span>
+          </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-8 text-foreground">Sobre a MPS Machinery</h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg md:text-xl leading-relaxed font-medium">
             A MPS Machinery é uma empresa moçambicana especializada no fornecimento de peças multimarcas para equipamentos pesados. Com uma rede internacional de fornecedores e forte presença local, garantimos soluções completas para os setores mais exigentes da indústria.

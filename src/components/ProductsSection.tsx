@@ -42,7 +42,11 @@ const ProductsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-bold text-sm uppercase tracking-[0.2em]">O Que Fornecemos</span>
+          <span className="text-secondary-dark font-bold text-sm uppercase tracking-[0.2em] flex items-center justify-center gap-2">
+            <span className="w-8 h-px bg-primary"></span>
+            O Que Fornecemos
+            <span className="w-8 h-px bg-primary"></span>
+          </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 text-slate-900">Produtos e Serviços</h2>
         </motion.div>
 

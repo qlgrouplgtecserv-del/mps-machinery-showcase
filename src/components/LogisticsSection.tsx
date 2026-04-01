@@ -38,7 +38,11 @@ const LogisticsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-bold text-sm uppercase tracking-[0.2em]">Presença Nacional</span>
+          <span className="text-secondary-dark font-bold text-sm uppercase tracking-[0.2em] flex items-center justify-start max-md:justify-center gap-2">
+            <span className="w-8 h-px bg-primary"></span>
+            Presença Nacional
+            <span className="w-8 h-px bg-primary"></span>
+          </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-8 text-foreground">Logística e Cobertura</h2>
         </motion.div>
 
