@@ -518,8 +518,19 @@
     }
   },
   "cookies": {
-    "message": "Utilizamos cookies para melhorar a sua experiência no nosso site. Ao continuar a navegar, concorda com a nossa política de privacidade.",
+    "message": "Utilizamos cookies para melhorar a sua experiência no nosso site. Ao continuar a navegar, concorda com a nossa ",
+    "privacyLink": "política de privacidade",
     "accept": "Aceitar Todos",
     "decline": "Recusar"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Política de Privacidade",
+      "content": "A sua privacidade é importante para nós. É política da MPS Machinery respeitar a sua privacidade em relação a qualquer informação sua que possamos recolher no nosso site. Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço, fazendo-o por meios justos e legais, com o seu conhecimento e consentimento. Não partilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei. O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controlo sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade pelas suas respetivas políticas de privacidade."
+    },
+    "terms": {
+      "title": "Termos de Uso",
+      "content": "Ao aceder ao site MPS Machinery, concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se não concordar com algum destes termos, está proibido de usar ou aceder a este site. Os materiais contidos neste site são protegidos pelas leis de direitos de autor e marcas comerciais aplicáveis. É concedida permissão para descarregar temporariamente uma cópia dos materiais (informações ou software) no site da MPS Machinery, apenas para visualização transitória pessoal e não comercial."
+    }
   }
 }

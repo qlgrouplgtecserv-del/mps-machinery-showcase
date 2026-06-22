@@ -78,6 +78,15 @@ const Footer = () => {
         className="border-t border-white/10 pt-8 mt-12 text-center text-sm text-white/40 font-bold tracking-widest flex flex-col md:flex-row justify-between items-center gap-4"
       >
         <span className="uppercase">© {new Date().getFullYear()} {t('footer.rights')}</span>
+        <div className="flex items-center gap-4 text-white/60">
+          <Link to="/privacidade" className="hover:text-primary transition-colors">
+            {t('legal.privacy.title')}
+          </Link>
+          <span>|</span>
+          <Link to="/termos" className="hover:text-primary transition-colors">
+            {t('legal.terms.title')}
+          </Link>
+        </div>
         <span>
           Desenvolvido por <a href="https://www.lgtecserv.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline transition-colors">LG TecServ</a>
         </span>

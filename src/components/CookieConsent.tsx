@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Cookie, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CookieConsent = () => {
   const { t } = useTranslation();
@@ -51,6 +52,9 @@ const CookieConsent = () => {
             <div className="flex-grow text-center md:text-left">
               <p className="text-sm md:text-base text-muted-foreground font-medium">
                 {t('cookies.message')}
+                <Link to="/privacidade" className="text-primary hover:underline ml-1">
+                  {t('cookies.privacyLink')}
+                </Link>.
               </p>
             </div>
             

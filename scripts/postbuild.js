@@ -25,6 +25,18 @@ const routes = [
     title: 'Equipamentos Pesados | MPS Machinery',
     description: 'Fornecimento e manutenção de maquinária pesada multimarcas para mineração, construção e logística.',
     image: 'https://www.mozmpsmachinery.com/assets/Excavadora-Cao6Uhbn.jpg'
+  },
+  {
+    path: '/privacidade',
+    title: 'Política de Privacidade | MPS Machinery',
+    description: 'Política de Privacidade da MPS Machinery em Moçambique.',
+    image: 'https://www.mozmpsmachinery.com/assets/logo.png'
+  },
+  {
+    path: '/termos',
+    title: 'Termos de Uso | MPS Machinery',
+    description: 'Termos de Uso do website da MPS Machinery.',
+    image: 'https://www.mozmpsmachinery.com/assets/logo.png'
   }
 ];
 
