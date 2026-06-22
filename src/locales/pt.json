@@ -526,11 +526,73 @@
   "legal": {
     "privacy": {
       "title": "Política de Privacidade",
-      "content": "A sua privacidade é importante para nós. É política da MPS Machinery respeitar a sua privacidade em relação a qualquer informação sua que possamos recolher no nosso site. Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço, fazendo-o por meios justos e legais, com o seu conhecimento e consentimento. Não partilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei. O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controlo sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade pelas suas respetivas políticas de privacidade."
+      "sections": [
+        {
+          "title": "1. Introdução",
+          "content": "A presente Política de Privacidade regula o tratamento dos dados pessoais dos utilizadores recolhidos no website da MPS Machinery. A sua privacidade é de extrema importância para nós. Comprometemo-nos a proteger a integridade e a confidencialidade das informações que partilha connosco, em estrita conformidade com a legislação aplicável em matéria de proteção de dados, incluindo as leis de Moçambique e as melhores práticas internacionais."
+        },
+        {
+          "title": "2. Recolha de Informação Pessoal",
+          "content": "No âmbito da nossa atividade de fornecimento de equipamentos pesados e serviços de dragagem, podemos recolher informações de identificação pessoal, tais como o seu nome, endereço de correio eletrónico, número de telefone e nome da empresa. Estas informações são solicitadas apenas quando estritamente necessárias para processar as suas consultas, enviar cotações, ou estabelecer relações comerciais."
+        },
+        {
+          "title": "3. Utilização da Informação",
+          "content": "Os dados recolhidos destinam-se exclusivamente à prestação e melhoria dos nossos serviços. Utilizamos a sua informação para comunicar consigo de forma eficaz, processar os seus pedidos, enviar atualizações sobre os nossos produtos e serviços, e garantir um atendimento ao cliente de excelência. Não processamos os seus dados para fins automatizados que produzam efeitos jurídicos significativos sem o seu consentimento prévio."
+        },
+        {
+          "title": "4. Proteção e Segurança de Dados",
+          "content": "A MPS Machinery adota medidas de segurança técnicas e organizativas rigorosas para proteger os seus dados pessoais contra acesso, alteração, divulgação ou destruição não autorizada. Implementamos protocolos de encriptação, firewalls e restrições de controlo de acesso aos nossos servidores e bases de dados para garantir o máximo nível de segurança cibernética."
+        },
+        {
+          "title": "5. Partilha com Terceiros",
+          "content": "Garantimos que as suas informações de identificação pessoal não serão vendidas, trocadas, transferidas ou fornecidas a terceiros sem o seu consentimento explícito. Excecionam-se os prestadores de serviços de confiança que nos auxiliam na operação do nosso website e na condução dos nossos negócios, desde que esses parceiros concordem em manter tais informações absolutamente confidenciais, e quando tal partilha for legalmente exigida por autoridades competentes."
+        },
+        {
+          "title": "6. Retenção de Dados",
+          "content": "Os seus dados pessoais serão conservados apenas durante o período necessário para as finalidades para os quais foram recolhidos, ou conforme exigido por obrigações legais, fiscais ou regulamentares aplicáveis à MPS Machinery."
+        },
+        {
+          "title": "7. Direitos do Utilizador",
+          "content": "Assiste-lhe o direito de solicitar o acesso aos seus dados pessoais, bem como a sua retificação, apagamento, limitação do tratamento, e a portabilidade dos mesmos. Caso deseje exercer algum destes direitos ou revogar o seu consentimento, solicitamos que nos contacte diretamente através do email: machineryparts.procurement@gmail.com."
+        }
+      ]
     },
     "terms": {
       "title": "Termos de Uso",
-      "content": "Ao aceder ao site MPS Machinery, concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se não concordar com algum destes termos, está proibido de usar ou aceder a este site. Os materiais contidos neste site são protegidos pelas leis de direitos de autor e marcas comerciais aplicáveis. É concedida permissão para descarregar temporariamente uma cópia dos materiais (informações ou software) no site da MPS Machinery, apenas para visualização transitória pessoal e não comercial."
+      "sections": [
+        {
+          "title": "1. Aceitação dos Termos",
+          "content": "Ao aceder e utilizar o website da MPS Machinery (https://www.mozmpsmachinery.com), o utilizador concorda expressamente e sem reservas em ficar vinculado por estes Termos de Uso, por todas as leis e regulamentos aplicáveis, e reconhece que é responsável pelo estrito cumprimento de qualquer legislação local aplicável. Caso não concorde com alguma destas disposições, encontra-se expressamente proibido de aceder ou utilizar esta plataforma."
+        },
+        {
+          "title": "2. Natureza dos Serviços",
+          "content": "A MPS Machinery dedica-se ao fornecimento de peças multimarcas para equipamentos pesados, serviços de dragagem, pneus, baterias e soluções ferroviárias em Moçambique. As informações contidas neste website têm caráter puramente informativo e comercial. A empresa reserva-se o direito de, a qualquer momento e sem aviso prévio, suspender, alterar ou descontinuar qualquer aspeto, serviço ou produto aqui apresentado."
+        },
+        {
+          "title": "3. Direitos de Propriedade Intelectual",
+          "content": "Todo o conteúdo presente neste website, incluindo, mas não limitando a, textos, gráficos, logotipos, ícones, imagens, clipes de áudio, downloads digitais e compilações de dados, é propriedade exclusiva da MPS Machinery ou dos seus fornecedores de conteúdo, e encontra-se protegido pelas leis de direitos de autor, marcas registadas e outras normativas internacionais relativas à propriedade intelectual. É estritamente proibida qualquer reprodução, distribuição, modificação ou publicação sem o consentimento prévio, expresso e por escrito."
+        },
+        {
+          "title": "4. Licença de Utilização",
+          "content": "É concedida permissão para descarregar temporariamente uma cópia dos materiais de informação no website da MPS Machinery apenas para visualização transitória, pessoal e não comercial. Esta concessão não constitui uma transferência de título. Sob esta licença, o utilizador não poderá modificar os materiais, usá-los para qualquer finalidade comercial, realizar engenharia reversa de qualquer software presente no site, ou transferir os materiais para outra entidade ou servidor."
+        },
+        {
+          "title": "5. Isenção de Responsabilidade",
+          "content": "Os materiais no website da MPS Machinery são fornecidos 'tal como estão'. A MPS Machinery não oferece garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação, garantias implícitas ou condições de comercialização, adequação a um fim específico, ou não violação de propriedade intelectual ou outra violação de direitos. Ademais, a empresa não garante nem faz qualquer representação relativa à exatidão, aos resultados prováveis ou à fiabilidade do uso dos materiais."
+        },
+        {
+          "title": "6. Limitações de Responsabilidade",
+          "content": "Em circunstância alguma a MPS Machinery ou os seus fornecedores serão responsáveis por quaisquer danos diretos, indiretos, incidentais, especiais ou consequenciais (incluindo, sem limitação, danos por perda de dados ou lucros, ou devido a interrupção de negócios) decorrentes do uso ou da incapacidade de usar os materiais neste website, mesmo que um representante autorizado da MPS Machinery tenha sido notificado oralmente ou por escrito da possibilidade de tais danos."
+        },
+        {
+          "title": "7. Revisões e Erratas",
+          "content": "Os materiais exibidos no website da MPS Machinery podem incluir erros técnicos, tipográficos ou fotográficos. Não garantimos que qualquer material no seu site seja preciso, completo ou atual. Podemos efetuar alterações aos materiais contidos no site a qualquer momento, sem aviso prévio. No entanto, não nos comprometemos a atualizar esses mesmos materiais."
+        },
+        {
+          "title": "8. Lei Aplicável e Jurisdição",
+          "content": "Estes Termos de Uso são regidos e interpretados de acordo com as leis da República de Moçambique. Qualquer litígio resultante da utilização deste website será submetido à jurisdição exclusiva dos tribunais competentes da cidade de Maputo, renunciando o utilizador a qualquer outro foro por mais privilegiado que seja."
+        }
+      ]
     }
   }
 }

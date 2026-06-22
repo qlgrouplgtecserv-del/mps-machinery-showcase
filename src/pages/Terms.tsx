@@ -19,12 +19,17 @@ const Terms = () => {
       
       <main className="flex-grow pt-32 pb-20">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-8 text-primary">
+          <h1 className="font-display text-4xl md:text-5xl font-bold mb-12 text-primary">
             {t('legal.terms.title')}
           </h1>
           
-          <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground leading-relaxed">
-            <p>{t('legal.terms.content')}</p>
+          <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground leading-relaxed space-y-8">
+            {(t('legal.terms.sections', { returnObjects: true }) as {title: string, content: string}[]).map((section, idx) => (
+              <div key={idx} className="bg-card/50 p-6 rounded-2xl border border-border">
+                <h2 className="text-xl font-bold text-foreground mb-4 font-display">{section.title}</h2>
+                <p className="text-base">{section.content}</p>
+              </div>
+            ))}
           </div>
         </div>
       </main>

@@ -526,11 +526,73 @@
   "legal": {
     "privacy": {
       "title": "Privacy Policy",
-      "content": "Your privacy is important to us. It is MPS Machinery's policy to respect your privacy regarding any information we may collect from you across our website. We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We don't share any personally identifying information publicly or with third-parties, except when required to by law. Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies."
+      "sections": [
+        {
+          "title": "1. Introduction",
+          "content": "This Privacy Policy governs the processing of personal data of users collected on the MPS Machinery website. Your privacy is of the utmost importance to us. We are committed to protecting the integrity and confidentiality of the information you share with us, in strict compliance with applicable data protection legislation, including the laws of Mozambique and international best practices."
+        },
+        {
+          "title": "2. Collection of Personal Information",
+          "content": "In the scope of our business of supplying heavy equipment and dredging services, we may collect personally identifiable information such as your name, email address, phone number, and company name. This information is requested only when strictly necessary to process your inquiries, send quotations, or establish business relationships."
+        },
+        {
+          "title": "3. Use of Information",
+          "content": "The collected data is exclusively intended for the provision and improvement of our services. We use your information to communicate effectively with you, process your requests, send updates on our products and services, and ensure excellent customer service. We do not process your data for automated purposes that produce significant legal effects without your prior consent."
+        },
+        {
+          "title": "4. Data Protection and Security",
+          "content": "MPS Machinery adopts rigorous technical and organizational security measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. We implement encryption protocols, firewalls, and access control restrictions to our servers and databases to ensure the highest level of cybersecurity."
+        },
+        {
+          "title": "5. Sharing with Third Parties",
+          "content": "We guarantee that your personally identifiable information will not be sold, traded, transferred, or provided to third parties without your explicit consent. Exceptions are trusted service providers who assist us in operating our website and conducting our business, provided those partners agree to keep such information absolutely confidential, and when such sharing is legally required by competent authorities."
+        },
+        {
+          "title": "6. Data Retention",
+          "content": "Your personal data will only be retained for the period necessary for the purposes for which it was collected, or as required by legal, tax, or regulatory obligations applicable to MPS Machinery."
+        },
+        {
+          "title": "7. User Rights",
+          "content": "You have the right to request access to your personal data, as well as its rectification, erasure, limitation of processing, and portability. Should you wish to exercise any of these rights or revoke your consent, we ask that you contact us directly via email: machineryparts.procurement@gmail.com."
+        }
+      ]
     },
     "terms": {
       "title": "Terms of Use",
-      "content": "By accessing the MPS Machinery website, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law. Permission is granted to temporarily download one copy of the materials (information or software) on MPS Machinery's website for personal, non-commercial transitory viewing only."
+      "sections": [
+        {
+          "title": "1. Acceptance of Terms",
+          "content": "By accessing and using the MPS Machinery website (https://www.mozmpsmachinery.com), the user expressly and unconditionally agrees to be bound by these Terms of Use, all applicable laws and regulations, and acknowledges that they are responsible for strict compliance with any applicable local legislation. If you do not agree with any of these provisions, you are expressly prohibited from accessing or using this platform."
+        },
+        {
+          "title": "2. Nature of Services",
+          "content": "MPS Machinery is dedicated to the supply of multi-brand parts for heavy equipment, dredging services, tires, batteries, and railway solutions in Mozambique. The information contained on this website is purely informative and commercial in nature. The company reserves the right, at any time and without prior notice, to suspend, alter, or discontinue any aspect, service, or product presented herein."
+        },
+        {
+          "title": "3. Intellectual Property Rights",
+          "content": "All content on this website, including but not limited to texts, graphics, logos, icons, images, audio clips, digital downloads, and data compilations, is the exclusive property of MPS Machinery or its content suppliers, and is protected by copyright laws, trademarks, and other international intellectual property regulations. Any reproduction, distribution, modification, or publication without prior, express, and written consent is strictly prohibited."
+        },
+        {
+          "title": "4. Use License",
+          "content": "Permission is granted to temporarily download one copy of the information materials on the MPS Machinery website for personal, non-commercial transitory viewing only. This grant does not constitute a transfer of title. Under this license, the user may not modify the materials, use them for any commercial purpose, reverse engineer any software on the site, or transfer the materials to another entity or server."
+        },
+        {
+          "title": "5. Disclaimer",
+          "content": "The materials on the MPS Machinery website are provided 'as is'. MPS Machinery makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Furthermore, the company does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials."
+        },
+        {
+          "title": "6. Limitations of Liability",
+          "content": "In no event shall MPS Machinery or its suppliers be liable for any direct, indirect, incidental, special, or consequential damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on this website, even if an authorized representative of MPS Machinery has been notified orally or in writing of the possibility of such damage."
+        },
+        {
+          "title": "7. Revisions and Errata",
+          "content": "The materials appearing on the MPS Machinery website could include technical, typographical, or photographic errors. We do not warrant that any of the materials on its website are accurate, complete, or current. We may make changes to the materials contained on the site at any time without prior notice. However, we do not make any commitment to update the materials."
+        },
+        {
+          "title": "8. Governing Law and Jurisdiction",
+          "content": "These Terms of Use are governed by and construed in accordance with the laws of the Republic of Mozambique. Any dispute arising from the use of this website shall be subject to the exclusive jurisdiction of the competent courts of the city of Maputo, with the user waiving any other jurisdiction, however privileged it may be."
+        }
+      ]
     }
   }
 }
