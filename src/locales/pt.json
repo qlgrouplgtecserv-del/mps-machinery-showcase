@@ -1,0 +1,520 @@
+{
+  "navbar": {
+    "home": "Início",
+    "about": "Sobre Nós",
+    "dredging": "Dragagem",
+    "heavyEquipment": "Máquinas Pesadas",
+    "contact": "Contato"
+  },
+  "hero": {
+    "badge": "Moçambique • África Austral",
+    "title1": "Soluções em Peças e",
+    "title2": "Equipamentos Pesados",
+    "subtitle": "Fornecimento líder de componentes genuínos para mineração, construção e energia.",
+    "ctaQuote": "Solicitar Cotação",
+    "ctaContact": "Fale Conosco",
+    "stats": {
+      "clients": "Clientes Industriais",
+      "brands": "Marcas Parceiras",
+      "regions": "Regiões Atendidas"
+    }
+  },
+  "about": {
+    "badge": "Anos de Excelência Operacional",
+    "subtitle": "Quem Somos",
+    "title1": "A base sólida para",
+    "title2": "operações gigantes.",
+    "description": "A MPS Machinery é uma empresa moçambicana especializada no fornecimento de peças multimarcas para equipamentos pesados. Com uma rede internacional de fornecedores e forte presença local, garantimos soluções completas para os setores mais exigentes da indústria.",
+    "mission": {
+      "title": "Nossa Missão",
+      "text": "Fornecer peças e componentes de alta qualidade para equipamentos pesados, assegurando a continuidade operacional dos nossos clientes nos setores de mineração, construção, energia e logística."
+    },
+    "vision": {
+      "title": "Nossa Visão",
+      "text": "Ser a referência em fornecimento de peças multimarcas em Moçambique e na África Austral, reconhecida pela excelência, rapidez e confiabilidade absoluta em prazos."
+    },
+    "values": {
+      "title": "Nossos Valores",
+      "text": "Compromisso total com qualidade e segurança, transparência em todas as relações comerciais, inovação contínua de processos e profunda responsabilidade social com a comunidade."
+    }
+  },
+  "products": {
+    "subtitle": "O Que Fornecemos",
+    "title": "Produtos e Serviços",
+    "specialBadge": "DESTAQUE ESPECIAL",
+    "tabs": {
+      "pecas": {
+        "label": "Peças Pesadas",
+        "title": "Peças para Equipamentos Pesados",
+        "desc": "Fornecemos componentes originais e de reposição para as principais marcas mundiais de equipamentos pesados.",
+        "items": ["Peças de Motor", "Sistemas Hidráulicos", "Transmissão", "Filtragem", "Arrefecimento", "Ground Engaging Tools (GET)", "Peças de Desgaste", "Componentes Elétricos"]
+      },
+      "pneus": {
+        "label": "Pneus",
+        "title": "Pneus Industriais",
+        "desc": "Pneus de alta performance para operações de mineração, construção e logística, das melhores marcas mundiais.",
+        "items": ["Bridgestone", "Firestone", "Goodyear", "Michelin", "Pneus OTR", "Pneus para Camiões", "Pneus para Empilhadoras", "Recauchutagem"]
+      },
+      "baterias": {
+        "label": "Baterias",
+        "title": "Baterias Industriais",
+        "desc": "Baterias de arranque e ciclo profundo para equipamentos pesados, veículos comerciais e aplicações estacionárias.",
+        "items": ["Varta", "Energizer", "GS Yuasa", "Optima", "Bosch", "Exide", "Baterias de Ciclo Profundo", "Baterias de Arranque"]
+      },
+      "ferrovia": {
+        "label": "Ferrovia",
+        "title": "Soluções Ferroviárias",
+        "desc": "Soluções completas para infraestrutura e material circulante ferroviário, abrangendo desde trilhos até componentes de vagões.",
+        "items": ["Trilhos e Acessórios", "Dormentes", "Fixações Ferroviárias", "Sistemas de Travagem", "Peças para Vagões", "Baterias de Locomotiva", "Rodas e Eixos", "Componentes de Sinalização"]
+      }
+    }
+  },
+  "brands": {
+    "subtitle": "Marcas de Confiança",
+    "title": "A Nossa Extensa Rede",
+    "description": "Trabalhamos com os principais fabricantes mundiais para garantir durabilidade, performance e segurança em todas as operações.",
+    "heavyEquip": "Equipamentos Pesados",
+    "tiresBatteries": "Pneus & Baterias"
+  },
+  "sectors": {
+    "subtitle": "Onde Atuamos",
+    "title1": "Setores de",
+    "title2": "Especialidade",
+    "description": "Nossa experiência abrange as indústrias mais críticas de Moçambique, fornecendo o suporte necessário para operações ininterruptas.",
+    "items": {
+      "mineracao": {
+        "title": "Mineração",
+        "text": "Suporte completo para frotas de mineração a céu aberto e subterrâneas, com peças de alto desempenho."
+      },
+      "construcao": {
+        "title": "Construção Pesada",
+        "text": "Soluções para terraplenagem, pavimentação e infraestrutura, garantindo disponibilidade máxima."
+      },
+      "energia": {
+        "title": "Energia",
+        "text": "Componentes para geradores e equipamentos de manutenção de infraestrutura energética."
+      },
+      "logistica": {
+        "title": "Logística e Portos",
+        "text": "Peças para empilhadeiras de grande porte, guindastes e frotas de transporte rodoviário."
+      }
+    }
+  },
+  "logistics": {
+    "subtitle": "Presença Nacional",
+    "title": "Logística e Cobertura",
+    "coverageTitle": "Cobertura em Todo Moçambique",
+    "coverageDesc": "Com base em Maputo e pontos estratégicos de distribuição em todo o país, garantimos entregas rápidas e eficientes para as operações mais remotas.",
+    "tagHeadquarters": "Sede",
+    "expansionInfo": "Expansão prevista para a África do Sul em breve."
+  },
+  "differentials": {
+    "subtitle": "Por Que a MPS",
+    "title": "Diferenciais Competitivos",
+    "items": {
+      "rapidez": {
+        "title": "Rapidez na Entrega",
+        "desc": "Logística eficiente para minimizar tempos de paragem das operações."
+      },
+      "qualidade": {
+        "title": "Qualidade Garantida",
+        "desc": "Peças originais e de reposição certificadas das melhores marcas."
+      },
+      "rede": {
+        "title": "Rede Internacional",
+        "desc": "Fornecedores globais que garantem disponibilidade e preços competitivos."
+      },
+      "suporte": {
+        "title": "Suporte Técnico",
+        "desc": "Equipa especializada para apoiar na seleção e aplicação de peças."
+      },
+      "local": {
+        "title": "Conhecimento Local",
+        "desc": "Experiência profunda do mercado moçambicano e suas necessidades."
+      },
+      "transparencia": {
+        "title": "Transparência",
+        "desc": "Relações comerciais claras, honestas e orientadas para resultados."
+      }
+    }
+  },
+  "clients": {
+    "subtitle": "Confiança Comprovada",
+    "title": "Clientes e Parceiros",
+    "description": "Empresas líderes em mineração, energia, construção e logística que confiam na MPS Machinery.",
+    "stats": {
+      "projects": "Grandes Projetos Atendidos",
+      "multisector": "Multi-Setorial",
+      "multisectorDesc": "Mineração, Gás, Petróleo, Construção e Portos.",
+      "trust": "Confiança",
+      "trustDesc": "Homologados pelos maiores players do mercado nacional."
+    },
+    "list": "Kenmare Resources, Mota-Engil, Syrah Resources, TotalEnergies, Portos de Moçambique, CFM, Jindal, Vulcan Mineração, Eni Mozambique, entre outros parceiros estratégicos."
+  },
+  "contact": {
+    "subtitle": "Fale Conosco",
+    "title": "Entre em Contato",
+    "form": {
+      "name": "Nome Completo",
+      "company": "Empresa",
+      "email": "Email",
+      "phone": "Telefone",
+      "message": "Descreva a sua necessidade...",
+      "send": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "successTitle": "Mensagem Enviada!",
+      "successDesc": "Entraremos em contato em breve."
+    },
+    "info": {
+      "title": "Informações de Contato",
+      "address": "Maputo, Moçambique",
+      "whatsapp": "WhatsApp Direto"
+    }
+  },
+  "footer": {
+    "description": "Soluções completas em peças e equipamentos pesados para a indústria moçambicana e da África Austral.",
+    "quickLinks": "Links Rápidos",
+    "contact": "Contato",
+    "phone": "Telefone",
+    "email": "Email",
+    "address": "Endereço",
+    "rights": "MPS Machinery.",
+    "developed": "Desenvolvido com excelência operacional."
+  },
+  "aboutPage": {
+    "title1": "Sobre a",
+    "title2": "MPS Machinery",
+    "subtitle": "Conheça a história e os valores da empresa que está construindo a base sólida das operações gigantes em Moçambique.",
+    "history": {
+      "subtitle": "Nossa História",
+      "title1": "De Moçambique para o",
+      "title2": "Mundo",
+      "p1": "A MPS Machinery nasceu com um propósito claro: garantir que as indústrias moçambicanas não sofram com o tempo de inatividade. Sabemos que no setor de máquinas pesadas e dragagem, cada minuto parado significa perda financeira expressiva.",
+      "p2": "Foi assim que construímos uma vasta teia de fornecedores globais, trazendo para Moçambique peças genuínas e suporte qualificado para grandes marcas mundiais. Hoje, orgulhamo-nos de ser o braço direito das maiores operações de mineração, portos e construção do país."
+    },
+    "presence": {
+      "title": "Presença Global",
+      "desc": "Peças vindas diretamente das fábricas na Europa, Ásia e Américas."
+    },
+    "stats": {
+      "years": "Anos de Experiência",
+      "parts": "Peças Entregues",
+      "coverage": "Cobertura Nacional"
+    }
+  },
+  "contactPage": {
+    "title1": "Fale com a",
+    "title2": "Especialista",
+    "subtitle": "Solicite cotações, tire dúvidas e tenha suporte especializado. A nossa equipa está pronta para garantir que a sua operação nunca pare.",
+    "faq": {
+      "subtitle": "Perguntas Frequentes",
+      "title1": "Dúvidas",
+      "title2": "Comuns",
+      "desc": "Passe o cursor sobre os cartões para revelar as respostas sobre os nossos métodos de entrega e garantia.",
+      "hover": "Passar o cursor para ler",
+      "q1": "Qual o tempo médio de entrega para peças de desgaste?",
+      "a1": "Para peças em stock local, a entrega é feita em 24h a 48h. Para importações urgentes (Air Freight), o prazo é de 7 a 14 dias.",
+      "q2": "Vocês fornecem peças originais (OEM)?",
+      "a2": "Sim, trabalhamos diretamente com os fabricantes globais garantindo que todas as peças são originais ou de primeira linha com qualidade OEM atestada.",
+      "q3": "A MPS Machinery faz a instalação das peças?",
+      "a3": "Oferecemos supervisão técnica e consultoria durante a instalação para peças críticas, como sistemas hidráulicos e motores, mediante contrato.",
+      "q4": "Quais são as províncias atendidas?",
+      "a4": "Temos cobertura nacional. Enviamos peças para qualquer mina ou porto em Moçambique, de Maputo a Cabo Delgado, via transporte rodoviário ou aéreo.",
+      "q5": "Como acionar a garantia de um componente?",
+      "a5": "Basta entrar em contacto com o seu gestor de conta enviando o número de série da peça e evidências da falha prematura para darmos início ao processo de análise.",
+      "q6": "Têm peças para dragas de pequeno porte?",
+      "a6": "Sim, fornecemos componentes desde pequenas dragas mecânicas e anfíbias até grandes Dragas de Sucção com Cortador (CSD)."
+    }
+  },
+  "dredgingPage": {
+    "header": {
+      "tag": "Serviço Especializado",
+      "title1": "Soluções de",
+      "title2": "Dragagem",
+      "desc": "Oferecemos suporte técnico, peças de reposição e consultoria especializada para frotas de dragagem de capital e manutenção. Mantemos os portos moçambicanos operacionais."
+    },
+    "table": {
+      "title1": "Comparativo Técnico de",
+      "title2": "Dragas",
+      "desc": "Selecione o equipamento ideal para a sua operação marítima com base nas características do solo e requisitos do projeto.",
+      "col1": "Especificação",
+      "col2": "Sucção com Cortador (CSD)",
+      "col3": "Draga de Arrasto (TSHD)",
+      "col4": "Draga Mecânica",
+      "row1": {
+        "title": "Tipo de Solo Ideal",
+        "c1": "Solos duros, rochas fraturadas, argila",
+        "c2": "Areia, lodo, cascalho solto",
+        "c3": "Entulhos, rochas grandes, lama espessa"
+      },
+      "row2": {
+        "title": "Profundidade Máxima",
+        "c1": "Até 35 metros",
+        "c2": "Até 100 metros+",
+        "c3": "Limitada pelo braço/cabo (aprox. 30m)"
+      },
+      "row3": {
+        "title": "Mobilidade em Operação",
+        "c1": "Estacionária (usa âncoras/spuds)",
+        "c2": "Alta (Navega durante o trabalho)",
+        "c3": "Estacionária (sob batelão/pontão)"
+      },
+      "row4": {
+        "title": "Principal Vantagem",
+        "c1": "Alta precisão no corte",
+        "c2": "Não bloqueia canais de navegação",
+        "c3": "Extração de lixo e detritos"
+      }
+    },
+    "steps": {
+      "title1": "O Nosso Processo",
+      "title2": "Operacional",
+      "desc": "Uma abordagem sistemática para garantir eficiência, segurança e conformidade ambiental em cada etapa.",
+      "step1": {
+        "title": "1. Estudo Batimétrico",
+        "desc": "Mapeamento detalhado do fundo do mar ou rio usando tecnologia sonar avançada para determinar o volume exato de sedimentos a remover."
+      },
+      "step2": {
+        "title": "2. Execução da Dragagem",
+        "desc": "Mobilização da draga ideal e início da extração dos sedimentos, com monitoramento constante das coordenadas GPS e fluxo de material."
+      },
+      "step3": {
+        "title": "3. Validação e Segurança",
+        "desc": "Batimetria pós-dragagem para certificar que as cotas de projeto foram atingidas, assegurando um calado seguro e documentação técnica."
+      }
+    },
+    "gallery": {
+      "title": "Nossos Trabalhos",
+      "highlight": "em Ação",
+      "desc": "Imagens de operações de dragagem realizadas com equipamentos fornecidos e suportados pela nossa equipa."
+    },
+    "faq": {
+      "title": "Perguntas",
+      "highlight": "Frequentes",
+      "q1": "Quais são os principais desafios da dragagem em Moçambique?",
+      "a1": "As variações de marés e o tipo de solo costeiro exigem dragas com alta capacidade de corte e adaptação rápida às condições do mar.",
+      "q2": "Como garantem a segurança ambiental durante as operações?",
+      "a2": "Utilizamos barreiras de contenção de sedimentos e monitoramento contínuo de turbidez, operando estritamente dentro das normas ambientais moçambicanas.",
+      "q3": "Fornecem peças para todas as marcas de dragas?",
+      "a3": "Sim, trabalhamos com peças originais e de reposição (OEM) para as principais fabricantes globais de dragas CSD, TSHD e mecânicas.",
+      "q4": "Qual a diferença entre dragagem de capital e manutenção?",
+      "a4": "A dragagem de capital cria novos canais ou aprofunda significativamente os existentes, exigindo equipamentos pesados para solo duro. A de manutenção remove sedimentos recentes (areia/lama) para manter a profundidade navegável."
+    }
+  },
+  "heavyEquipmentPage": {
+    "header": {
+      "tag": "Catálogo e Especialidade",
+      "title1": "Máquinas",
+      "title2": "Pesadas",
+      "desc": "Nenhuma operação é pesada demais. Descubra a nossa vasta gama de suporte e peças de desgaste focadas nas máquinas mais robustas e críticas do mercado."
+    },
+    "machines": {
+      "tag": "Linha de Fornecimento",
+      "quoteBtn": "Cotar Peças para",
+      "items": {
+        "escavadoras": {
+          "title": "Escavadoras Hidráulicas",
+          "desc": "Versatilidade e potência para qualquer tipo de terreno. Fornecemos peças para os sistemas hidráulicos, material rodante e motores das escavadoras mais pesadas do mercado, garantindo a máxima produtividade na mineração e construção."
+        },
+        "bulldozers": {
+          "title": "Bulldozers (Tratores de Esteira)",
+          "desc": "A força bruta necessária para terraplenagem pesada. Oferecemos lâminas, correntes, roletes e peças de motor para manter o seu bulldozer operando mesmo sob as condições mais extremas."
+        },
+        "dumpers": {
+          "title": "Caminhões Basculantes (Dumpers)",
+          "desc": "Essenciais para o transporte de grandes volumes de minério e terra. Nossa linha de peças garante segurança e estabilidade, reduzindo o desgaste do sistema de suspensão e transmissão dos dumpers."
+        },
+        "motoniveladoras": {
+          "title": "Motoniveladoras",
+          "desc": "Precisão absoluta no nivelamento de estradas e terrenos. Com as nossas peças de desgaste originais e componentes de transmissão, as motoniveladoras da sua frota atuarão com perfeição milimétrica."
+        },
+        "geradores": {
+          "title": "Geradores de Energia",
+          "desc": "A energia não pode falhar. Fornecemos peças para geradores industriais de grande porte, fundamentais para manter as operações de mineração e infraestrutura 24 horas por dia."
+        },
+        "mineracao": {
+          "title": "Sistemas de Mineração Completo",
+          "desc": "Do moinho ao transporte, temos o know-how e os componentes necessários para as plantas de processamento e frotas integradas de mineração a céu aberto ou subterrânea."
+        }
+      }
+    },
+    "components": {
+      "title1": "A Nossa Linha de",
+      "title2": "Componentes",
+      "desc": "Trabalhamos com todo o espectro de manutenção pesada. Selecione a categoria para explorar a nossa disponibilidade de estoque.",
+      "tabs": {
+        "motor": "Motor",
+        "hidraulica": "Hidráulica",
+        "material": "Mat. Rodante",
+        "desgaste": "Desgaste"
+      },
+      "motor": {
+        "title": "Peças de Motor (Engine Parts)",
+        "desc": "O coração da sua máquina não pode parar. Fornecemos peças originais e OEM para motores Cummins, CAT, Komatsu e Volvo.",
+        "list": [
+          "Blocos de Motor e Cabeçotes",
+          "Pistões, Anéis e Camisas",
+          "Bombas de Injeção e Bicos Injetores",
+          "Turbocompressores"
+        ]
+      },
+      "hidraulica": {
+        "title": "Sistemas Hidráulicos",
+        "desc": "A força que movimenta toneladas de terra. Componentes testados em bancada para garantir pressão e fluxo perfeitos.",
+        "list": [
+          "Bombas Hidráulicas Principais",
+          "Cilindros de Lança e Braço",
+          "Motores de Giro e Translação",
+          "Válvulas de Controle Direcional"
+        ]
+      },
+      "material": {
+        "title": "Material Rodante (Undercarriage)",
+        "desc": "O elo com o solo. Peças forjadas de alta resistência térmica para suportar abrasão extrema e impacto constante.",
+        "list": [
+          "Correntes e Sapatas (Track Chains)",
+          "Roletes Inferiores e Superiores",
+          "Rodas Motrizes (Sprockets)",
+          "Rodas Guia (Idlers)"
+        ]
+      },
+      "desgaste": {
+        "title": "Ferramentas de Penetração no Solo (FPS)",
+        "desc": "Ligas de aço especial que cortam rocha como se fosse areia. Minimize as paradas trocando os dentes no tempo certo.",
+        "list": [
+          "Dentes e Unhas de Caçamba",
+          "Adaptadores e Pinos",
+          "Cantos de Lâmina (Cutting Edges)",
+          "Protetores de Caçamba e Lábios"
+        ]
+      }
+    },
+    "orbital": {
+      "title1": "Visão Geral",
+      "title2": "Orbital",
+      "desc": "Nossa abordagem holística garante que nenhum componente crítico da sua máquina fique sem suporte especializado.",
+      "p1": {
+        "title": "Material Rodante",
+        "desc": "Esteiras, Roletes e Sprockets."
+      },
+      "p2": {
+        "title": "Cilindros Hidráulicos",
+        "desc": "Vedação, hastes e pressão total."
+      },
+      "p3": {
+        "title": "FPS (Dentes)",
+        "desc": "Ferramentas de Penetração e Caçamba."
+      }
+    }
+  },
+  "equipment": {
+    "subtitle": "Cobertura Completa",
+    "title1": "Equipamentos",
+    "title2": "Atendidos",
+    "description": "Fornecemos peças e serviços especializados para uma vasta gama de equipamentos pesados, garantindo a continuidade das suas operações com máxima eficiência.",
+    "items": {
+      "excavators": "Escavadoras",
+      "bulldozers": "Bulldozers",
+      "backhoes": "Retroescavadoras",
+      "loaders": "Carregadoras",
+      "graders": "Motoniveladoras",
+      "dumpers": "Dumpers",
+      "generators": "Geradores",
+      "mining": "Equip. de Mineração"
+    }
+  },
+  "showcase": {
+    "subtitle": "Aplicações Reais",
+    "title1": "Equipamento para as",
+    "title2": "Maiores Exigências.",
+    "description": "Consulte a nossa vasta seleção visual. Desde gigantes de mineração até essenciais de terraplenagem, estamos presentes onde a robustez é imprescindível.",
+    "items": {
+      "excavator": {
+        "title": "Escavadoras",
+        "category": "Movimentação de Terras"
+      },
+      "grader": {
+        "title": "Motoniveladoras",
+        "category": "Infraestruturas"
+      },
+      "dumper": {
+        "title": "Dumpers",
+        "category": "Transporte Pesado"
+      },
+      "mining": {
+        "title": "Equipamentos de Mineração",
+        "category": "Extração"
+      },
+      "bulldozer": {
+        "title": "Bulldozers",
+        "category": "Nivelamento"
+      },
+      "generator": {
+        "title": "Geradores de Energia",
+        "category": "Energia Industrial"
+      }
+    }
+  },
+  "dredgingSection": {
+    "subtitle": "Serviços Especializados",
+    "title": "Operações de Dragagem",
+    "desc": "A MPS Machinery atua com as mais eficientes soluções de dragagem, garantindo excelência operacional no ambiente marítimo e portuário.",
+    "objectives": {
+      "title": "Objetivos da Dragagem",
+      "items": [
+        "Aumentar o calado dos portos",
+        "Permitir a entrada de navios de grande porte",
+        "Manter canais de navegação operacionais",
+        "Preparar áreas para construção de cais e terminais",
+        "Recuperar terras (land reclamation)",
+        "Instalar infraestruturas submarinas"
+      ]
+    },
+    "types": {
+      "title": "Principais Tipos de Dragagem",
+      "goalsLabel": "Objetivos",
+      "items": {
+        "capital": {
+          "title": "Dragagem de Capital",
+          "subtitle": "Capital Dredging",
+          "desc": "Realizada antes da construção de um porto ou terminal.",
+          "goals": [
+            "Criar novos canais.",
+            "Construir bacias de manobra.",
+            "Preparar fundações para cais."
+          ]
+        },
+        "maintenance": {
+          "title": "Dragagem de Manutenção",
+          "subtitle": "Maintenance Dredging",
+          "desc": "Executada periodicamente para remover sedimentos que se acumulam naturalmente.",
+          "goals": [
+            "Manter a profundidade do porto.",
+            "Garantir a navegação segura."
+          ]
+        }
+      }
+    },
+    "equipment": {
+      "title": "Principais Equipamentos Utilizados",
+      "items": {
+        "csd": {
+          "name": "Dragas de Sucção com Cortador (CSD)",
+          "f1": "Possuem uma cabeça rotativa que fragmenta o solo antes da sucção.",
+          "f2": "Indicadas para solos compactos e argilas."
+        },
+        "tshd": {
+          "name": "Dragas de Arrasto (TSHD)",
+          "f1": "Aspiram sedimentos enquanto navegam.",
+          "f2": "Armazenam o material em tanques (hopper).",
+          "f3": "Muito utilizadas em canais de navegação."
+        },
+        "mechanical": {
+          "name": "Dragas Mecânicas",
+          "f1": "Utilizam escavadoras ou baldes (clamshell).",
+          "f2": "Adequadas para áreas confinadas e portos."
+        }
+      }
+    }
+  }
+}

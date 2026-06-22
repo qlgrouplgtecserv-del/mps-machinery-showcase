@@ -1,0 +1,520 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "dredging": "Dredging",
+    "heavyEquipment": "Heavy Equipment",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Mozambique • Southern Africa",
+    "title1": "Solutions for Parts and",
+    "title2": "Heavy Equipment",
+    "subtitle": "Leading supplier of genuine components for mining, construction, and energy.",
+    "ctaQuote": "Request a Quote",
+    "ctaContact": "Talk to Us",
+    "stats": {
+      "clients": "Industrial Clients",
+      "brands": "Partner Brands",
+      "regions": "Regions Served"
+    }
+  },
+  "about": {
+    "badge": "Years of Operational Excellence",
+    "subtitle": "About Us",
+    "title1": "The solid foundation for",
+    "title2": "giant operations.",
+    "description": "MPS Machinery is a Mozambican company specializing in the supply of multi-brand parts for heavy equipment. With an international network of suppliers and strong local presence, we guarantee complete solutions for the most demanding industry sectors.",
+    "mission": {
+      "title": "Our Mission",
+      "text": "Provide high-quality parts and components for heavy equipment, ensuring the operational continuity of our clients in the mining, construction, energy, and logistics sectors."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "To be the reference in the supply of multi-brand parts in Mozambique and Southern Africa, recognized for excellence, speed, and absolute reliability in deadlines."
+    },
+    "values": {
+      "title": "Our Values",
+      "text": "Total commitment to quality and safety, transparency in all commercial relations, continuous innovation of processes, and deep social responsibility with the community."
+    }
+  },
+  "products": {
+    "subtitle": "What We Supply",
+    "title": "Products and Services",
+    "specialBadge": "SPECIAL FEATURE",
+    "tabs": {
+      "pecas": {
+        "label": "Heavy Parts",
+        "title": "Parts for Heavy Equipment",
+        "desc": "We supply genuine and aftermarket components for the world's leading brands of heavy equipment.",
+        "items": ["Engine Parts", "Hydraulic Systems", "Transmission", "Filtration", "Cooling", "Ground Engaging Tools (GET)", "Wear Parts", "Electrical Components"]
+      },
+      "pneus": {
+        "label": "Tires",
+        "title": "Industrial Tires",
+        "desc": "High-performance tires for mining, construction, and logistics operations from the best global brands.",
+        "items": ["Bridgestone", "Firestone", "Goodyear", "Michelin", "OTR Tires", "Truck Tires", "Forklift Tires", "Retreading"]
+      },
+      "baterias": {
+        "label": "Batteries",
+        "title": "Industrial Batteries",
+        "desc": "Starter and deep cycle batteries for heavy equipment, commercial vehicles, and stationary applications.",
+        "items": ["Varta", "Energizer", "GS Yuasa", "Optima", "Bosch", "Exide", "Deep Cycle Batteries", "Starter Batteries"]
+      },
+      "ferrovia": {
+        "label": "Railway",
+        "title": "Railway Solutions",
+        "desc": "Complete solutions for railway infrastructure and rolling stock, ranging from rails to wagon components.",
+        "items": ["Rails and Accessories", "Sleepers", "Railway Fastenings", "Braking Systems", "Wagon Parts", "Locomotive Batteries", "Wheels and Axles", "Signaling Components"]
+      }
+    }
+  },
+  "brands": {
+    "subtitle": "Trusted Brands",
+    "title": "Our Extensive Network",
+    "description": "We work with the world's leading manufacturers to ensure durability, performance, and safety in all operations.",
+    "heavyEquip": "Heavy Equipment",
+    "tiresBatteries": "Tires & Batteries"
+  },
+  "sectors": {
+    "subtitle": "Where We Operate",
+    "title1": "Sectors of",
+    "title2": "Expertise",
+    "description": "Our experience covers the most critical industries in Mozambique, providing the necessary support for uninterrupted operations.",
+    "items": {
+      "mineracao": {
+        "title": "Mining",
+        "text": "Complete support for open-pit and underground mining fleets, with high-performance parts."
+      },
+      "construcao": {
+        "title": "Heavy Construction",
+        "text": "Solutions for earthmoving, paving, and infrastructure, ensuring maximum availability."
+      },
+      "energia": {
+        "title": "Energy",
+        "text": "Components for generators and energy infrastructure maintenance equipment."
+      },
+      "logistica": {
+        "title": "Logistics and Ports",
+        "text": "Parts for large forklifts, cranes, and road transport fleets."
+      }
+    }
+  },
+  "logistics": {
+    "subtitle": "National Presence",
+    "title": "Logistics and Coverage",
+    "coverageTitle": "Coverage Throughout Mozambique",
+    "coverageDesc": "Based in Maputo and with strategic distribution points across the country, we guarantee fast and efficient deliveries to the most remote operations.",
+    "tagHeadquarters": "Headquarters",
+    "expansionInfo": "Expansion planned for South Africa soon."
+  },
+  "differentials": {
+    "subtitle": "Why Choose MPS",
+    "title": "Competitive Advantages",
+    "items": {
+      "rapidez": {
+        "title": "Fast Delivery",
+        "desc": "Efficient logistics to minimize operation downtime."
+      },
+      "qualidade": {
+        "title": "Guaranteed Quality",
+        "desc": "Original and certified aftermarket parts from the best brands."
+      },
+      "rede": {
+        "title": "International Network",
+        "desc": "Global suppliers ensuring availability and competitive prices."
+      },
+      "suporte": {
+        "title": "Technical Support",
+        "desc": "Specialized team to assist in part selection and application."
+      },
+      "local": {
+        "title": "Local Knowledge",
+        "desc": "Deep experience of the Mozambican market and its needs."
+      },
+      "transparencia": {
+        "title": "Transparency",
+        "desc": "Clear, honest, and results-oriented commercial relationships."
+      }
+    }
+  },
+  "clients": {
+    "subtitle": "Proven Trust",
+    "title": "Clients and Partners",
+    "description": "Leading companies in mining, energy, construction, and logistics trust MPS Machinery.",
+    "stats": {
+      "projects": "Major Projects Served",
+      "multisector": "Multi-Sectoral",
+      "multisectorDesc": "Mining, Gas, Oil, Construction, and Ports.",
+      "trust": "Trust",
+      "trustDesc": "Approved by the biggest players in the national market."
+    },
+    "list": "Kenmare Resources, Mota-Engil, Syrah Resources, TotalEnergies, Portos de Moçambique, CFM, Jindal, Vulcan Mineração, Eni Mozambique, among other strategic partners."
+  },
+  "contact": {
+    "subtitle": "Talk to Us",
+    "title": "Get in Touch",
+    "form": {
+      "name": "Full Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Describe your needs...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "successTitle": "Message Sent!",
+      "successDesc": "We will contact you shortly."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Maputo, Mozambique",
+      "whatsapp": "Direct WhatsApp"
+    }
+  },
+  "footer": {
+    "description": "Complete solutions in parts and heavy equipment for the Mozambican and Southern African industry.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "rights": "MPS Machinery.",
+    "developed": "Developed with operational excellence."
+  },
+  "aboutPage": {
+    "title1": "About",
+    "title2": "MPS Machinery",
+    "subtitle": "Discover the history and values of the company that is building the solid foundation of giant operations in Mozambique.",
+    "history": {
+      "subtitle": "Our History",
+      "title1": "From Mozambique to the",
+      "title2": "World",
+      "p1": "MPS Machinery was born with a clear purpose: to ensure that Mozambican industries do not suffer from downtime. We know that in the heavy machinery and dredging sector, every minute stopped means significant financial loss.",
+      "p2": "That's how we built a vast network of global suppliers, bringing genuine parts and qualified support for major global brands to Mozambique. Today, we are proud to be the right arm of the largest mining, port, and construction operations in the country."
+    },
+    "presence": {
+      "title": "Global Presence",
+      "desc": "Parts coming directly from factories in Europe, Asia, and the Americas."
+    },
+    "stats": {
+      "years": "Years of Experience",
+      "parts": "Parts Delivered",
+      "coverage": "National Coverage"
+    }
+  },
+  "contactPage": {
+    "title1": "Talk to the",
+    "title2": "Specialist",
+    "subtitle": "Request quotes, ask questions, and get specialized support. Our team is ready to ensure your operation never stops.",
+    "faq": {
+      "subtitle": "Frequently Asked Questions",
+      "title1": "Common",
+      "title2": "Questions",
+      "desc": "Hover over the cards to reveal answers about our delivery methods and warranty.",
+      "hover": "Hover to read",
+      "q1": "What is the average delivery time for wear parts?",
+      "a1": "For parts in local stock, delivery takes 24h to 48h. For urgent imports (Air Freight), it takes 7 to 14 days.",
+      "q2": "Do you provide original parts (OEM)?",
+      "a2": "Yes, we work directly with global manufacturers ensuring all parts are original or top-tier with attested OEM quality.",
+      "q3": "Does MPS Machinery install the parts?",
+      "a3": "We offer technical supervision and consulting during installation for critical parts like hydraulic systems and engines, under contract.",
+      "q4": "Which provinces do you serve?",
+      "a4": "We have national coverage. We send parts to any mine or port in Mozambique, from Maputo to Cabo Delgado, via road or air transport.",
+      "q5": "How to activate a component's warranty?",
+      "a5": "Just contact your account manager sending the part's serial number and evidence of premature failure to start the analysis process.",
+      "q6": "Do you have parts for small dredges?",
+      "a6": "Yes, we supply components from small mechanical and amphibious dredges to large Cutter Suction Dredgers (CSD)."
+    }
+  },
+  "dredgingPage": {
+    "header": {
+      "tag": "Specialized Service",
+      "title1": "Dredging",
+      "title2": "Solutions",
+      "desc": "We offer technical support, spare parts, and specialized consulting for capital and maintenance dredging fleets. We keep Mozambican ports operational."
+    },
+    "table": {
+      "title1": "Technical Comparison of",
+      "title2": "Dredgers",
+      "desc": "Select the ideal equipment for your maritime operation based on soil characteristics and project requirements.",
+      "col1": "Specification",
+      "col2": "Cutter Suction (CSD)",
+      "col3": "Trailing Suction Hopper (TSHD)",
+      "col4": "Mechanical Dredger",
+      "row1": {
+        "title": "Ideal Soil Type",
+        "c1": "Hard soils, fractured rocks, clay",
+        "c2": "Sand, silt, loose gravel",
+        "c3": "Debris, large rocks, thick mud"
+      },
+      "row2": {
+        "title": "Maximum Depth",
+        "c1": "Up to 35 meters",
+        "c2": "Up to 100+ meters",
+        "c3": "Limited by boom/cable (approx. 30m)"
+      },
+      "row3": {
+        "title": "Operation Mobility",
+        "c1": "Stationary (uses anchors/spuds)",
+        "c2": "High (Sails while working)",
+        "c3": "Stationary (on barge/pontoon)"
+      },
+      "row4": {
+        "title": "Main Advantage",
+        "c1": "High cutting precision",
+        "c2": "Does not block navigation channels",
+        "c3": "Debris and trash extraction"
+      }
+    },
+    "steps": {
+      "title1": "Our Operational",
+      "title2": "Process",
+      "desc": "A systematic approach to ensure efficiency, safety, and environmental compliance at every step.",
+      "step1": {
+        "title": "1. Bathymetric Survey",
+        "desc": "Detailed mapping of the sea or river bottom using advanced sonar technology to determine the exact volume of sediments to remove."
+      },
+      "step2": {
+        "title": "2. Dredging Execution",
+        "desc": "Mobilization of the ideal dredger and start of sediment extraction, with constant monitoring of GPS coordinates and material flow."
+      },
+      "step3": {
+        "title": "3. Validation and Safety",
+        "desc": "Post-dredging bathymetry to certify that project levels were reached, ensuring safe draft and technical documentation."
+      }
+    },
+    "gallery": {
+      "title": "Our Work",
+      "highlight": "in Action",
+      "desc": "Images of dredging operations carried out with equipment supplied and supported by our team."
+    },
+    "faq": {
+      "title": "Frequently Asked",
+      "highlight": "Questions",
+      "q1": "What are the main dredging challenges in Mozambique?",
+      "a1": "Tidal variations and the type of coastal soil require dredgers with high cutting capacity and rapid adaptation to sea conditions.",
+      "q2": "How do you ensure environmental safety during operations?",
+      "a2": "We use sediment containment barriers and continuous turbidity monitoring, operating strictly within Mozambican environmental standards.",
+      "q3": "Do you supply parts for all brands of dredgers?",
+      "a3": "Yes, we work with original and aftermarket parts (OEM) for the main global manufacturers of CSD, TSHD, and mechanical dredgers.",
+      "q4": "What is the difference between capital and maintenance dredging?",
+      "a4": "Capital dredging creates new channels or significantly deepens existing ones, requiring heavy equipment for hard soil. Maintenance dredging removes recent sediments (sand/mud) to keep navigable depth."
+    }
+  },
+  "heavyEquipmentPage": {
+    "header": {
+      "tag": "Catalog and Specialty",
+      "title1": "Heavy",
+      "title2": "Machinery",
+      "desc": "No operation is too heavy. Discover our vast range of support and wear parts focused on the most robust and critical machines on the market."
+    },
+    "machines": {
+      "tag": "Supply Line",
+      "quoteBtn": "Quote Parts for",
+      "items": {
+        "escavadoras": {
+          "title": "Hydraulic Excavators",
+          "desc": "Versatility and power for any type of terrain. We supply parts for the hydraulic systems, undercarriage, and engines of the heaviest excavators on the market, ensuring maximum productivity in mining and construction."
+        },
+        "bulldozers": {
+          "title": "Bulldozers",
+          "desc": "The brute force needed for heavy earthmoving. We offer blades, chains, rollers, and engine parts to keep your bulldozer operating even under the most extreme conditions."
+        },
+        "dumpers": {
+          "title": "Dump Trucks (Dumpers)",
+          "desc": "Essential for transporting large volumes of ore and earth. Our line of parts ensures safety and stability, reducing wear on the dumpers' suspension and transmission systems."
+        },
+        "motoniveladoras": {
+          "title": "Motor Graders",
+          "desc": "Absolute precision in road and terrain leveling. With our original wear parts and transmission components, your fleet's motor graders will perform with millimeter perfection."
+        },
+        "geradores": {
+          "title": "Power Generators",
+          "desc": "Power cannot fail. We supply parts for large industrial generators, essential to keep mining operations and infrastructure running 24 hours a day."
+        },
+        "mineracao": {
+          "title": "Complete Mining Systems",
+          "desc": "From milling to transport, we have the know-how and components necessary for processing plants and integrated open-pit or underground mining fleets."
+        }
+      }
+    },
+    "components": {
+      "title1": "Our Component",
+      "title2": "Line",
+      "desc": "We work with the entire spectrum of heavy maintenance. Select the category to explore our stock availability.",
+      "tabs": {
+        "motor": "Engine",
+        "hidraulica": "Hydraulic",
+        "material": "Undercarriage",
+        "desgaste": "Wear"
+      },
+      "motor": {
+        "title": "Engine Parts",
+        "desc": "The heart of your machine cannot stop. We supply original and OEM parts for Cummins, CAT, Komatsu, and Volvo engines.",
+        "list": [
+          "Engine Blocks and Cylinder Heads",
+          "Pistons, Rings, and Liners",
+          "Injection Pumps and Injectors",
+          "Turbochargers"
+        ]
+      },
+      "hidraulica": {
+        "title": "Hydraulic Systems",
+        "desc": "The force that moves tons of earth. Bench-tested components to ensure perfect pressure and flow.",
+        "list": [
+          "Main Hydraulic Pumps",
+          "Boom and Arm Cylinders",
+          "Swing and Travel Motors",
+          "Directional Control Valves"
+        ]
+      },
+      "material": {
+        "title": "Undercarriage",
+        "desc": "The link to the ground. High-temperature forged parts to withstand extreme abrasion and constant impact.",
+        "list": [
+          "Track Chains and Shoes",
+          "Lower and Upper Rollers",
+          "Drive Sprockets",
+          "Idlers"
+        ]
+      },
+      "desgaste": {
+        "title": "Ground Engaging Tools (GET)",
+        "desc": "Special steel alloys that cut rock as if it were sand. Minimize downtime by changing teeth at the right time.",
+        "list": [
+          "Bucket Teeth and Adapters",
+          "Pins and Retainers",
+          "Cutting Edges",
+          "Bucket Protectors and Lips"
+        ]
+      }
+    },
+    "orbital": {
+      "title1": "Orbital",
+      "title2": "Overview",
+      "desc": "Our holistic approach ensures that no critical component of your machine is left without specialized support.",
+      "p1": {
+        "title": "Undercarriage",
+        "desc": "Tracks, Rollers, and Sprockets."
+      },
+      "p2": {
+        "title": "Hydraulic Cylinders",
+        "desc": "Seals, rods, and total pressure."
+      },
+      "p3": {
+        "title": "GET (Teeth)",
+        "desc": "Penetration Tools and Bucket."
+      }
+    }
+  },
+  "equipment": {
+    "subtitle": "Complete Coverage",
+    "title1": "Equipment",
+    "title2": "Serviced",
+    "description": "We provide specialized parts and services for a vast range of heavy equipment, ensuring the continuity of your operations with maximum efficiency.",
+    "items": {
+      "excavators": "Excavators",
+      "bulldozers": "Bulldozers",
+      "backhoes": "Backhoes",
+      "loaders": "Loaders",
+      "graders": "Motor Graders",
+      "dumpers": "Dumpers",
+      "generators": "Generators",
+      "mining": "Mining Equip."
+    }
+  },
+  "showcase": {
+    "subtitle": "Real Applications",
+    "title1": "Equipment for the",
+    "title2": "Highest Demands.",
+    "description": "Browse our vast visual selection. From mining giants to earthmoving essentials, we are present where robustness is essential.",
+    "items": {
+      "excavator": {
+        "title": "Excavators",
+        "category": "Earthmoving"
+      },
+      "grader": {
+        "title": "Motor Graders",
+        "category": "Infrastructure"
+      },
+      "dumper": {
+        "title": "Dumpers",
+        "category": "Heavy Transport"
+      },
+      "mining": {
+        "title": "Mining Equipment",
+        "category": "Extraction"
+      },
+      "bulldozer": {
+        "title": "Bulldozers",
+        "category": "Leveling"
+      },
+      "generator": {
+        "title": "Power Generators",
+        "category": "Industrial Power"
+      }
+    }
+  },
+  "dredgingSection": {
+    "subtitle": "Specialized Services",
+    "title": "Dredging Operations",
+    "desc": "MPS Machinery operates with the most efficient dredging solutions, ensuring operational excellence in the maritime and port environment.",
+    "objectives": {
+      "title": "Dredging Objectives",
+      "items": [
+        "Increase port draft",
+        "Allow entry of large vessels",
+        "Maintain operational navigation channels",
+        "Prepare areas for quay and terminal construction",
+        "Land reclamation",
+        "Install underwater infrastructure"
+      ]
+    },
+    "types": {
+      "title": "Main Types of Dredging",
+      "goalsLabel": "Objectives",
+      "items": {
+        "capital": {
+          "title": "Capital Dredging",
+          "subtitle": "Capital Dredging",
+          "desc": "Performed before the construction of a port or terminal.",
+          "goals": [
+            "Create new channels.",
+            "Build maneuvering basins.",
+            "Prepare foundations for quays."
+          ]
+        },
+        "maintenance": {
+          "title": "Maintenance Dredging",
+          "subtitle": "Maintenance Dredging",
+          "desc": "Performed periodically to remove sediments that accumulate naturally.",
+          "goals": [
+            "Maintain port depth.",
+            "Ensure safe navigation."
+          ]
+        }
+      }
+    },
+    "equipment": {
+      "title": "Main Equipment Used",
+      "items": {
+        "csd": {
+          "name": "Cutter Suction Dredgers (CSD)",
+          "f1": "They have a rotating head that fragments the soil before suction.",
+          "f2": "Indicated for compact soils and clays."
+        },
+        "tshd": {
+          "name": "Trailing Suction Hopper Dredgers (TSHD)",
+          "f1": "They vacuum sediments while sailing.",
+          "f2": "They store the material in tanks (hopper).",
+          "f3": "Widely used in navigation channels."
+        },
+        "mechanical": {
+          "name": "Mechanical Dredgers",
+          "f1": "They use excavators or buckets (clamshell).",
+          "f2": "Suitable for confined areas and ports."
+        }
+      }
+    }
+  }
+}

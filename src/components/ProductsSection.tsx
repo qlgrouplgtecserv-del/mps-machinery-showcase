@@ -1,36 +1,39 @@
 import { useState } from "react";
 import { Cog, CircleDot, Battery, TrainFront } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
-const tabs = [
-  {
-    id: "pecas", icon: Cog, label: "Peças Pesadas",
-    title: "Peças para Equipamentos Pesados",
-    desc: "Fornecemos componentes originais e de reposição para as principais marcas mundiais de equipamentos pesados.",
-    items: ["Peças de Motor", "Sistemas Hidráulicos", "Transmissão", "Filtragem", "Arrefecimento", "Ground Engaging Tools (GET)", "Peças de Desgaste", "Componentes Elétricos"],
-  },
-  {
-    id: "pneus", icon: CircleDot, label: "Pneus",
-    title: "Pneus Industriais",
-    desc: "Pneus de alta performance para operações de mineração, construção e logística, das melhores marcas mundiais.",
-    items: ["Bridgestone", "Firestone", "Goodyear", "Michelin", "Pneus OTR", "Pneus para Camiões", "Pneus para Empilhadoras", "Recauchutagem"],
-  },
-  {
-    id: "baterias", icon: Battery, label: "Baterias",
-    title: "Baterias Industriais",
-    desc: "Baterias de arranque e ciclo profundo para equipamentos pesados, veículos comerciais e aplicações estacionárias.",
-    items: ["Varta", "Energizer", "GS Yuasa", "Optima", "Bosch", "Exide", "Baterias de Ciclo Profundo", "Baterias de Arranque"],
-  },
-  {
-    id: "ferrovia", icon: TrainFront, label: "Ferrovia",
-    title: "Soluções Ferroviárias",
-    desc: "Soluções completas para infraestrutura e material circulante ferroviário, abrangendo desde trilhos até componentes de vagões.",
-    items: ["Trilhos e Acessórios", "Dormentes", "Fixações Ferroviárias", "Sistemas de Travagem", "Peças para Vagões", "Baterias de Locomotiva", "Rodas e Eixos", "Componentes de Sinalização"],
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const ProductsSection = () => {
+  const { t } = useTranslation();
   const [active, setActive] = useState("pecas");
+
+  const tabs = [
+    {
+      id: "pecas", icon: Cog, label: t('products.tabs.pecas.label'),
+      title: t('products.tabs.pecas.title'),
+      desc: t('products.tabs.pecas.desc'),
+      items: t('products.tabs.pecas.items', { returnObjects: true }) as string[],
+    },
+    {
+      id: "pneus", icon: CircleDot, label: t('products.tabs.pneus.label'),
+      title: t('products.tabs.pneus.title'),
+      desc: t('products.tabs.pneus.desc'),
+      items: t('products.tabs.pneus.items', { returnObjects: true }) as string[],
+    },
+    {
+      id: "baterias", icon: Battery, label: t('products.tabs.baterias.label'),
+      title: t('products.tabs.baterias.title'),
+      desc: t('products.tabs.baterias.desc'),
+      items: t('products.tabs.baterias.items', { returnObjects: true }) as string[],
+    },
+    {
+      id: "ferrovia", icon: TrainFront, label: t('products.tabs.ferrovia.label'),
+      title: t('products.tabs.ferrovia.title'),
+      desc: t('products.tabs.ferrovia.desc'),
+      items: t('products.tabs.ferrovia.items', { returnObjects: true }) as string[],
+    },
+  ];
+
   const tab = tabs.find((t) => t.id === active)!;
 
   return (
@@ -44,10 +47,10 @@ const ProductsSection = () => {
         >
           <span className="text-secondary-dark font-bold text-sm uppercase tracking-[0.2em] flex items-center justify-center gap-2">
             <span className="w-8 h-px bg-primary"></span>
-            O Que Fornecemos
+            {t('products.subtitle')}
             <span className="w-8 h-px bg-primary"></span>
           </span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 text-slate-900">Produtos e Serviços</h2>
+          <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 text-slate-900">{t('products.title')}</h2>
         </motion.div>
 
         <div className="flex flex-wrap justify-center gap-3 mb-16">
@@ -73,7 +76,7 @@ const ProductsSection = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
-            className="bg-white border border-slate-100 rounded-3xl p-8 md:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.04)] relative overflow-hidden group"
+            className="bg-white border border-slate-100 rounded-3xl p-8 md:p-16 shadow-lg relative overflow-hidden group"
           >
             <div className="absolute top-0 right-0 p-12 opacity-[0.03] group-hover:opacity-[0.05] transition-opacity duration-700 pointer-events-none text-primary">
               <tab.icon size={300} />
@@ -92,7 +95,7 @@ const ProductsSection = () => {
                       animate={{ opacity: 1, scale: 1 }}
                       className="inline-block mt-2 text-xs bg-secondary/20 text-secondary-dark px-3 py-1 rounded-full font-bold tracking-widest"
                     >
-                      DESTAQUE ESPECIAL
+                      {t('products.specialBadge')}
                     </motion.span>
                   )}
                 </div>
@@ -115,7 +118,7 @@ const ProductsSection = () => {
                       hidden: { opacity: 0, scale: 0.95 },
                       visible: { opacity: 1, scale: 1 }
                     }}
-                    className="flex items-center gap-4 bg-muted/30 border border-border/80 rounded-xl px-6 py-4 hover:border-primary/40 hover:bg-white hover:shadow-lg transition-all group/item"
+                    className="flex items-center gap-4 bg-muted/30 border border-border rounded-xl px-6 py-4 hover:border-primary/40 hover:bg-white hover:shadow-lg transition-all group/item"
                   >
                     <div className="w-2.5 h-2.5 bg-primary rounded-full shrink-0 group-hover/item:scale-125 transition-transform" />
                     <span className="text-sm md:text-base font-bold text-foreground">{item}</span>

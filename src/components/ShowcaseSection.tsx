@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 // Imports
 import bulldozerImg from "@/assets/equipamentos pesados/Bulldozer.jpg";
@@ -9,16 +10,18 @@ import excavatorImg from "@/assets/equipamentos pesados/Excavadora.jpg";
 import graderImg from "@/assets/equipamentos pesados/Motoniveladoras.jpg";
 import generatorImg from "@/assets/equipamentos pesados/gerador de energia.jpg";
 
-const gallery = [
-  { img: excavatorImg, title: "Escavadoras", colSpan: "md:col-span-2", rowSpan: "md:row-span-2", category: "Movimentação de Terras" },
-  { img: graderImg, title: "Motoniveladoras", colSpan: "md:col-span-2", rowSpan: "md:row-span-1", category: "Infraestruturas" },
-  { img: dumpersImg, title: "Dumpers", colSpan: "md:col-span-1", rowSpan: "md:row-span-1", category: "Transporte Pesado" },
-  { img: miningEqImg, title: "Equipamentos de Mineração", colSpan: "md:col-span-1", rowSpan: "md:row-span-1", category: "Extração" },
-  { img: bulldozerImg, title: "Bulldozers", colSpan: "md:col-span-2", rowSpan: "md:row-span-1", category: "Nivelamento" },
-  { img: generatorImg, title: "Geradores de Energia", colSpan: "md:col-span-2", rowSpan: "md:row-span-1", category: "Energia Industrial" },
-];
-
 const ShowcaseSection = () => {
+  const { t } = useTranslation();
+
+  const gallery = [
+    { img: excavatorImg, title: t('showcase.items.excavator.title'), colSpan: "md:col-span-2", rowSpan: "md:row-span-2", category: t('showcase.items.excavator.category') },
+    { img: graderImg, title: t('showcase.items.grader.title'), colSpan: "md:col-span-2", rowSpan: "md:row-span-1", category: t('showcase.items.grader.category') },
+    { img: dumpersImg, title: t('showcase.items.dumper.title'), colSpan: "md:col-span-1", rowSpan: "md:row-span-1", category: t('showcase.items.dumper.category') },
+    { img: miningEqImg, title: t('showcase.items.mining.title'), colSpan: "md:col-span-1", rowSpan: "md:row-span-1", category: t('showcase.items.mining.category') },
+    { img: bulldozerImg, title: t('showcase.items.bulldozer.title'), colSpan: "md:col-span-2", rowSpan: "md:row-span-1", category: t('showcase.items.bulldozer.category') },
+    { img: generatorImg, title: t('showcase.items.generator.title'), colSpan: "md:col-span-2", rowSpan: "md:row-span-1", category: t('showcase.items.generator.category') },
+  ];
+
   return (
     <section id="galeria" className="py-32 bg-background relative overflow-hidden">
       {/* Decorative backdrop elements */}
@@ -35,10 +38,10 @@ const ShowcaseSection = () => {
           >
             <span className="text-secondary-dark font-bold text-sm uppercase tracking-[0.2em] flex items-center gap-2 mb-4">
               <span className="w-8 h-px bg-primary"></span>
-              Aplicações Reais
+              {t('showcase.subtitle', 'Aplicações Reais')}
             </span>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-[1.1]">
-              Equipamento para as <span className="text-primary italic">Maiores Exigências.</span>
+              {t('showcase.title1', 'Equipamento para as')} <span className="text-primary italic">{t('showcase.title2', 'Maiores Exigências.')}</span>
             </h2>
           </motion.div>
           <motion.div
@@ -48,7 +51,7 @@ const ShowcaseSection = () => {
             className="md:max-w-md"
           >
             <p className="text-muted-foreground text-lg font-medium leading-relaxed">
-              Consulte a nossa vasta seleção visual. Desde gigantes de mineração até essenciais de terraplenagem, estamos presentes onde a robustez é imprescindível.
+              {t('showcase.description', 'Consulte a nossa vasta seleção visual. Desde gigantes de mineração até essenciais de terraplenagem, estamos presentes onde a robustez é imprescindível.')}
             </p>
           </motion.div>
         </div>

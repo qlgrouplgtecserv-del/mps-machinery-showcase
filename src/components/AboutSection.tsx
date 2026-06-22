@@ -1,75 +1,111 @@
 import { Target, Eye, Shield } from "lucide-react";
 import { motion } from "framer-motion";
-
-const cards = [
-  { icon: Target, title: "Missão", text: "Fornecer peças e componentes de alta qualidade para equipamentos pesados, assegurando a continuidade operacional dos nossos clientes nos setores de mineração, construção, energia e logística." },
-  { icon: Eye, title: "Visão", text: "Ser a referência em fornecimento de peças multimarcas em Moçambique e na África Austral, reconhecida pela excelência, rapidez e confiabilidade." },
-  { icon: Shield, title: "Valores", text: "Compromisso com qualidade, transparência nas relações comerciais, rapidez na entrega, inovação contínua e responsabilidade social." },
-];
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useTranslation } from "react-i18next";
+import imgEquipMineracao from "@/assets/equipamentos pesados/Excavadora.jpg";
 
 const AboutSection = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: { 
-      opacity: 1, 
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
-    },
-  };
+  const { t } = useTranslation();
 
   return (
-    <section id="sobre" className="section-padding bg-muted/30">
+    <section id="sobre" className="section-padding bg-background overflow-hidden">
       <div className="container mx-auto">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-20"
-        >
-          <span className="text-secondary-dark font-bold text-sm uppercase tracking-[0.2em] flex items-center justify-center gap-2">
-            <span className="w-8 h-px bg-primary"></span>
-            Quem Somos
-            <span className="w-8 h-px bg-primary"></span>
-          </span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-8 text-foreground">Sobre a MPS Machinery</h2>
-          <p className="text-muted-foreground max-w-3xl mx-auto text-lg md:text-xl leading-relaxed font-medium">
-            A MPS Machinery é uma empresa moçambicana especializada no fornecimento de peças multimarcas para equipamentos pesados. Com uma rede internacional de fornecedores e forte presença local, garantimos soluções completas para os setores mais exigentes da indústria.
-          </p>
-        </motion.div>
-
-        <motion.div 
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid md:grid-cols-3 gap-8"
-        >
-          {cards.map((c) => (
-            <motion.div 
-              key={c.title} 
-              variants={cardVariants}
-              whileHover={{ y: -10, transition: { duration: 0.2 } }}
-              className="bg-background border border-border/80 rounded-2xl p-10 hover:border-primary/40 transition-all shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] group"
-            >
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                <c.icon size={32} className="text-primary group-hover:text-white" />
+        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+          
+          {/* Lado Esquerdo - Imagem/Visual */}
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="w-full lg:w-1/2 relative"
+          >
+            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+              <div className="absolute inset-0 bg-primary/20 z-10 mix-blend-overlay"></div>
+              <img 
+                src={imgEquipMineracao} 
+                alt="Equipamento Pesado MPS" 
+                className="w-full h-full object-cover"
+              />
+              {/* Badge Overlay */}
+              <div className="absolute bottom-8 left-8 z-20 bg-white/90 backdrop-blur p-6 rounded-2xl shadow-xl max-w-[200px] border border-white/20">
+                <div className="text-4xl font-black text-primary mb-1">+10</div>
+                <div className="text-sm font-bold text-slate-700 leading-tight">{t('about.badge')}</div>
               </div>
-              <h3 className="font-display text-2xl font-bold mb-4 text-foreground">{c.title}</h3>
-              <p className="text-muted-foreground text-lg leading-relaxed font-medium">{c.text}</p>
-            </motion.div>
-          ))}
-        </motion.div>
+            </div>
+            
+            {/* Decoração Decorativa */}
+            <div className="absolute -z-10 top-1/2 -right-12 w-64 h-64 bg-secondary/30 blur-[80px] rounded-full mix-blend-multiply"></div>
+          </motion.div>
+
+          {/* Lado Direito - Conteúdo e Sanfona */}
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="w-full lg:w-1/2"
+          >
+            <span className="text-secondary-dark font-bold text-sm uppercase tracking-[0.2em] flex items-center gap-4 mb-6">
+              <span className="w-12 h-px bg-primary"></span>
+              {t('about.subtitle')}
+            </span>
+            
+            <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-foreground leading-tight">
+              {t('about.title1')} <span className="text-primary">{t('about.title2')}</span>
+            </h2>
+            
+            <p className="text-muted-foreground text-lg leading-relaxed font-medium mb-12">
+              {t('about.description')}
+            </p>
+
+            {/* Accordion */}
+            <Accordion type="single" collapsible defaultValue="item-1" className="w-full space-y-4">
+              <AccordionItem value="item-1" className="border border-border/50 bg-muted/20 rounded-xl px-6 data-[state=open]:bg-white data-[state=open]:border-primary/30 data-[state=open]:shadow-md transition-all">
+                <AccordionTrigger className="hover:no-underline py-6">
+                  <div className="flex items-center gap-4 text-left">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                      <Target size={24} />
+                    </div>
+                    <span className="font-display font-bold text-xl">{t('about.mission.title')}</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6 pl-16">
+                  {t('about.mission.text')}
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2" className="border border-border/50 bg-muted/20 rounded-xl px-6 data-[state=open]:bg-white data-[state=open]:border-primary/30 data-[state=open]:shadow-md transition-all">
+                <AccordionTrigger className="hover:no-underline py-6">
+                  <div className="flex items-center gap-4 text-left">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                      <Eye size={24} />
+                    </div>
+                    <span className="font-display font-bold text-xl">{t('about.vision.title')}</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6 pl-16">
+                  {t('about.vision.text')}
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="border border-border/50 bg-muted/20 rounded-xl px-6 data-[state=open]:bg-white data-[state=open]:border-primary/30 data-[state=open]:shadow-md transition-all">
+                <AccordionTrigger className="hover:no-underline py-6">
+                  <div className="flex items-center gap-4 text-left">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                      <Shield size={24} />
+                    </div>
+                    <span className="font-display font-bold text-xl">{t('about.values.title')}</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6 pl-16">
+                  {t('about.values.text')}
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </motion.div>
+
+        </div>
       </div>
     </section>
   );

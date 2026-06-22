@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const equipBrands = ["CAT", "Komatsu", "Volvo", "Hitachi", "Liebherr", "Toyota", "Nissan", "Mitsubishi", "SANY", "Atlas Copco", "Dongfeng", "WABCO", "Sinotruk", "Daewoo", "Tata"];
 const tireBrands = ["Bridgestone", "Firestone", "Goodyear", "Michelin"];
@@ -37,6 +38,8 @@ const MarqueeRow = ({ items, reverse = false, speed = 40 }: { items: string[], r
 };
 
 const BrandsSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="marcas" className="py-24 bg-background overflow-hidden">
       <div className="container mx-auto px-4">
@@ -48,12 +51,12 @@ const BrandsSection = () => {
         >
           <span className="text-primary font-bold text-sm uppercase tracking-[0.2em] flex items-center justify-center gap-2">
             <span className="w-8 h-px bg-primary"></span>
-            Marcas de Confiança
+            {t('brands.subtitle')}
             <span className="w-8 h-px bg-primary"></span>
           </span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-4 text-foreground">A Nossa Extensa Rede</h2>
+          <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-4 text-foreground">{t('brands.title')}</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed font-medium">
-            Trabalhamos com os principais fabricantes mundiais para garantir durabilidade, performance e segurança em todas as operações.
+            {t('brands.description')}
           </p>
         </motion.div>
       </div>
@@ -61,13 +64,13 @@ const BrandsSection = () => {
       <div className="flex flex-col gap-12 md:gap-16 pt-8 pb-12 w-full max-w-[100vw]">
         {/* Row 1: Heavy Equipment */}
         <div>
-          <p className="text-center text-sm font-bold uppercase tracking-widest text-muted-foreground/60 mb-6">Equipamentos Pesados</p>
+          <p className="text-center text-sm font-bold uppercase tracking-widest text-muted-foreground/60 mb-6">{t('brands.heavyEquip')}</p>
           <MarqueeRow items={equipBrands} speed={45} />
         </div>
         
         {/* Row 2: Tires & Batteries Combined for flow */}
         <div>
-           <p className="text-center text-sm font-bold uppercase tracking-widest text-muted-foreground/60 mb-6">Pneus & Baterias</p>
+           <p className="text-center text-sm font-bold uppercase tracking-widest text-muted-foreground/60 mb-6">{t('brands.tiresBatteries')}</p>
           <MarqueeRow items={[...tireBrands, ...batteryBrands]} reverse speed={35} />
         </div>
       </div>
