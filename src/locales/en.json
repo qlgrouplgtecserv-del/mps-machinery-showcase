@@ -516,5 +516,10 @@
         }
       }
     }
+  },
+  "cookies": {
+    "message": "We use cookies to enhance your experience on our website. By continuing to browse, you agree to our privacy policy.",
+    "accept": "Accept All",
+    "decline": "Decline"
   }
 }
