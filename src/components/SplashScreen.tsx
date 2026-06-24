@@ -6,10 +6,10 @@ const SplashScreen = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    // Fast splash screen (800ms display + 0.3s exit)
+    // Elegant splash screen with guaranteed visibility (2.5s)
     const timer = setTimeout(() => {
       setIsVisible(false);
-    }, 800);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -20,17 +20,17 @@ const SplashScreen = () => {
         <motion.div
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
           className="fixed inset-0 z-[1000] flex items-center justify-center bg-white"
         >
           <motion.img
             src={logo}
             alt="MPS Machinery Logo"
-            initial={{ scale: 0.5, opacity: 0 }}
-            animate={{ scale: 1.1, opacity: 1 }}
-            exit={{ scale: 1.5, opacity: 0 }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="w-48 md:w-64 object-contain"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 1.2, opacity: 0 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            className="w-[24rem] md:w-[32rem] object-contain"
           />
         </motion.div>
       )}

@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/90 backdrop-blur-xl shadow-lg border-b border-border py-2" : "bg-gradient-to-b from-black/60 to-transparent py-4"}`}>
-      <div className="container mx-auto flex items-center justify-between h-20 px-4">
+      <div className="container mx-auto flex items-center justify-between h-28 px-4">
         <Link 
           to="/" 
           className="flex items-center gap-3"
@@ -39,7 +39,7 @@ const Navbar = () => {
           <motion.img 
             src={logo} 
             alt="MPS Machinery" 
-            className="h-12 w-auto drop-shadow-md" 
+            className="h-20 md:h-24 w-auto drop-shadow-md" 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
