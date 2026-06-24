@@ -1,8 +1,8 @@
 import { TrainFront, Settings, ShieldCheck, MapPin, Wrench, HardHat, Target } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import imgRollingStock from "@/assets/rolling_stock.png";
 
-const imgRollingStock = "https://images.unsplash.com/photo-1541888040685-17730e9d6d37?auto=format&fit=crop&q=80";
 const imgInfrastructure = "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&q=80";
 
 const RailwaySection = () => {
