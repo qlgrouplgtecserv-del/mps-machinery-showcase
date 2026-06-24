@@ -517,6 +517,45 @@
       }
     }
   },
+  "railwaySection": {
+    "subtitle": "Soluções Especializadas",
+    "title": "Peças para Ferrovia",
+    "desc": "A MPS Machinery fornece componentes de alto desempenho para infraestruturas ferroviárias e material circulante, assegurando transporte eficiente e seguro.",
+    "objectives": {
+      "title": "Aplicações Ferroviárias",
+      "items": [
+        "Manutenção de locomotivas e vagões",
+        "Sistemas de travagem e suspensão",
+        "Substituição de eixos e rodas",
+        "Componentes para vias férreas"
+      ]
+    },
+    "types": {
+      "title": "Principais Componentes Fornecidos",
+      "goalsLabel": "Vantagens",
+      "items": {
+        "rollingStock": {
+          "title": "Material Circulante",
+          "subtitle": "Rolling Stock",
+          "desc": "Peças críticas para locomotivas e vagões, garantindo disponibilidade máxima da frota.",
+          "goals": [
+            "Maior vida útil dos componentes.",
+            "Redução do tempo de manutenção.",
+            "Segurança operacional elevada."
+          ]
+        },
+        "infrastructure": {
+          "title": "Infraestrutura Viária",
+          "subtitle": "Infrastructure",
+          "desc": "Materiais e componentes para a construção e manutenção de vias férreas.",
+          "goals": [
+            "Trilhos e fixações de alta resistência.",
+            "Sistemas de sinalização confiáveis."
+          ]
+        }
+      }
+    }
+  },
   "cookies": {
     "message": "Utilizamos cookies para melhorar a sua experiência no nosso site. Ao continuar a navegar, concorda com a nossa ",
     "privacyLink": "política de privacidade",

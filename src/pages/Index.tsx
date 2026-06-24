@@ -13,6 +13,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import DredgingSection from "@/components/DredgingSection";
+import RailwaySection from "@/components/RailwaySection";
 
 const Index = () => (
   <>
@@ -26,6 +27,7 @@ const Index = () => (
     <SectorsSection />
     <LogisticsSection />
     <DredgingSection />
+    <RailwaySection />
     <DifferentialsSection />
     <ClientsSection />
     <ContactSection />

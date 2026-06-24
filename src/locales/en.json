@@ -517,6 +517,45 @@
       }
     }
   },
+  "railwaySection": {
+    "subtitle": "Specialized Solutions",
+    "title": "Railway Parts",
+    "desc": "MPS Machinery provides high-performance components for railway infrastructure and rolling stock, ensuring efficient and safe transport.",
+    "objectives": {
+      "title": "Railway Applications",
+      "items": [
+        "Locomotive and wagon maintenance",
+        "Braking and suspension systems",
+        "Axle and wheel replacement",
+        "Railway track components"
+      ]
+    },
+    "types": {
+      "title": "Main Components Supplied",
+      "goalsLabel": "Advantages",
+      "items": {
+        "rollingStock": {
+          "title": "Rolling Stock",
+          "subtitle": "Rolling Stock",
+          "desc": "Critical parts for locomotives and wagons, ensuring maximum fleet availability.",
+          "goals": [
+            "Longer component lifespan.",
+            "Reduced maintenance time.",
+            "High operational safety."
+          ]
+        },
+        "infrastructure": {
+          "title": "Railway Infrastructure",
+          "subtitle": "Infrastructure",
+          "desc": "Materials and components for the construction and maintenance of railways.",
+          "goals": [
+            "High-resistance rails and fastenings.",
+            "Reliable signaling systems."
+          ]
+        }
+      }
+    }
+  },
   "cookies": {
     "message": "We use cookies to enhance your experience on our website. By continuing to browse, you agree to our ",
     "privacyLink": "privacy policy",
