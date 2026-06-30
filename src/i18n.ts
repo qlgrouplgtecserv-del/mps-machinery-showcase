@@ -13,9 +13,9 @@ i18n
       en: { translation: enTranslations }
     },
     fallbackLng: 'en',
-    lng: localStorage.getItem('i18nextLng') || 'en',
     detection: {
       order: ['localStorage', 'sessionStorage', 'cookie'],
+      lookupLocalStorage: 'mpsLanguage',
       caches: ['localStorage']
     },
     interpolation: {
