@@ -12,9 +12,9 @@ i18n
       pt: { translation: ptTranslations },
       en: { translation: enTranslations }
     },
-    fallbackLng: 'pt',
+    fallbackLng: 'en',
     detection: {
-      order: ['navigator', 'htmlTag', 'localStorage', 'sessionStorage', 'cookie', 'path', 'subdomain'],
+      order: ['localStorage', 'sessionStorage', 'cookie'],
       caches: ['localStorage']
     },
     interpolation: {

@@ -11,8 +11,8 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
 
   const toggleLanguage = () => {
-    const currentLang = i18n.language?.substring(0, 2).toLowerCase() || 'pt';
-    i18n.changeLanguage(currentLang === 'pt' ? 'en' : 'pt');
+    const currentLang = i18n.language?.substring(0, 2).toLowerCase() || 'en';
+    i18n.changeLanguage(currentLang === 'en' ? 'pt' : 'en');
   };
 
   const links = [
@@ -77,7 +77,7 @@ const Navbar = () => {
               className={`flex items-center gap-2 px-3 py-2 rounded-lg font-bold text-sm transition-colors mr-2 ${scrolled ? "bg-slate-100 text-slate-800 hover:bg-slate-200" : "bg-white/10 text-white hover:bg-white/20"}`}
             >
               <Globe size={16} />
-              {(i18n.language?.substring(0, 2) || 'pt').toUpperCase()}
+              {(i18n.language?.substring(0, 2) || 'en').toUpperCase()}
             </button>
 
             <Link 
@@ -137,7 +137,7 @@ const Navbar = () => {
                   className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-bold text-lg bg-slate-100 text-slate-800"
                 >
                   <Globe size={20} />
-                  Mudar para {(i18n.language?.substring(0, 2) || 'pt').toLowerCase() === 'pt' ? 'English' : 'Português'}
+                  {(i18n.language?.substring(0, 2) || 'en').toLowerCase() === 'en' ? 'Mudar para Português' : 'Switch to English'}
                 </button>
 
                 <Link 
