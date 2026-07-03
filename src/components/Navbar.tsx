@@ -18,8 +18,9 @@ const Navbar = () => {
   const links = [
     { label: t('navbar.home'), href: "/" },
     { label: t('navbar.about'), href: "/sobre" },
-    { label: t('navbar.dredging'), href: "/servicos/dragagem" },
-    { label: t('navbar.heavyEquipment'), href: "/servicos/equipamentos-pesados" },
+    { label: t('navbar.pecas'), href: "/servicos/equipamentos-pesados" },
+    { label: t('navbar.servicos'), href: "/servicos/dragagem" },
+    { label: t('navbar.recrutamento'), href: "/servicos/agencia-emprego" },
     { label: t('navbar.contact'), href: "/contato" },
   ];
 
@@ -30,8 +31,44 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/90 backdrop-blur-xl shadow-lg border-b border-border py-2" : "bg-gradient-to-b from-black/60 to-transparent py-4"}`}>
-      <div className="container mx-auto flex items-center justify-between h-28 px-4">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/90 backdrop-blur-xl shadow-lg border-b border-border pt-1 pb-2" : "bg-gradient-to-b from-black/60 to-transparent py-4"}`}>
+      {/* Mobile Marquee Categories */}
+      <div className="lg:hidden w-full flex relative mb-2 border-b border-slate-950 bg-slate-900 shadow-lg">
+        
+        {/* Fixed Label */}
+        <div className="z-10 flex items-center px-4 py-3 bg-slate-950 border-r border-slate-800 shadow-[4px_0_15px_rgba(0,0,0,0.6)]">
+          <span className="text-[11px] font-black text-white uppercase tracking-wider whitespace-nowrap">Acesso Rápido:</span>
+        </div>
+
+        {/* Scrolling Area */}
+        <div className="overflow-hidden w-full flex items-center">
+          <motion.div
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ repeat: Infinity, ease: "linear", duration: 30 }}
+            className="flex whitespace-nowrap gap-4 pl-4"
+          >
+            {/* Double the content to create seamless loop */}
+            {[...Array(2)].map((_, i) => (
+              <div key={i} className="flex gap-4 items-center shrink-0 py-2">
+                <Link to="/servicos/equipamentos-pesados" className="flex items-center gap-2 bg-primary text-slate-900 px-4 py-2 rounded-full text-xs font-black uppercase tracking-wider shadow-md hover:scale-105 transition-transform">
+                  <span className="text-sm">👆</span>
+                  {t('navbar.pecas')}
+                </Link>
+                <Link to="/servicos/dragagem" className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-full text-xs font-black uppercase tracking-wider shadow-md hover:scale-105 transition-transform">
+                  <span className="text-sm">👆</span>
+                  {t('navbar.servicos')}
+                </Link>
+                <Link to="/servicos/agencia-emprego" className="flex items-center gap-2 bg-emerald-600 text-white px-4 py-2 rounded-full text-xs font-black uppercase tracking-wider shadow-md hover:scale-105 transition-transform">
+                  <span className="text-sm">👆</span>
+                  {t('navbar.recrutamento')}
+                </Link>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </div>
+
+      <div className="container mx-auto flex items-center justify-between h-20 md:h-28 px-4">
         <Link 
           to="/" 
           className="flex items-center gap-3"

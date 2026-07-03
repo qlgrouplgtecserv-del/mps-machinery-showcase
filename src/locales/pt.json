@@ -2,8 +2,9 @@
   "navbar": {
     "home": "Início",
     "about": "Sobre Nós",
-    "dredging": "Dragagem",
-    "heavyEquipment": "Máquinas Pesadas",
+    "pecas": "Peças e Equipamentos",
+    "servicos": "Serviços Especializados",
+    "recrutamento": "Agência de Recrutamento",
     "contact": "Contato"
   },
   "hero": {
@@ -44,28 +45,22 @@
     "specialBadge": "DESTAQUE ESPECIAL",
     "tabs": {
       "pecas": {
-        "label": "Peças Pesadas",
-        "title": "Peças para Equipamentos Pesados",
-        "desc": "Fornecemos componentes originais e de reposição para as principais marcas mundiais de equipamentos pesados.",
-        "items": ["Peças de Motor", "Sistemas Hidráulicos", "Transmissão", "Filtragem", "Arrefecimento", "Ground Engaging Tools (GET)", "Peças de Desgaste", "Componentes Elétricos"]
+        "label": "Peças e Equip.",
+        "title": "Peças e Equipamentos",
+        "desc": "Fornecemos componentes originais e equipamentos de alta performance para a indústria pesada.",
+        "items": ["Peças Pesadas", "Pneus", "Baterias", "Ferrovia"]
       },
-      "pneus": {
-        "label": "Pneus",
-        "title": "Pneus Industriais",
-        "desc": "Pneus de alta performance para operações de mineração, construção e logística, das melhores marcas mundiais.",
-        "items": ["Bridgestone", "Firestone", "Goodyear", "Michelin", "Pneus OTR", "Pneus para Camiões", "Pneus para Empilhadoras", "Recauchutagem"]
+      "servicos": {
+        "label": "Serviços Especializados",
+        "title": "Soluções Especializadas",
+        "desc": "Oferecemos suporte técnico de excelência para operações industriais complexas e de grande escala.",
+        "items": ["Dragagem", "Manutenção de viaturas", "Serralharia"]
       },
-      "baterias": {
-        "label": "Baterias",
-        "title": "Baterias Industriais",
-        "desc": "Baterias de arranque e ciclo profundo para equipamentos pesados, veículos comerciais e aplicações estacionárias.",
-        "items": ["Varta", "Energizer", "GS Yuasa", "Optima", "Bosch", "Exide", "Baterias de Ciclo Profundo", "Baterias de Arranque"]
-      },
-      "ferrovia": {
-        "label": "Ferrovia",
-        "title": "Soluções Ferroviárias",
-        "desc": "Soluções completas para infraestrutura e material circulante ferroviário, abrangendo desde trilhos até componentes de vagões.",
-        "items": ["Trilhos e Acessórios", "Dormentes", "Fixações Ferroviárias", "Sistemas de Travagem", "Peças para Vagões", "Baterias de Locomotiva", "Rodas e Eixos", "Componentes de Sinalização"]
+      "recrutamento": {
+        "label": "Agência de Recrutamento",
+        "title": "Agência de Recrutamento",
+        "desc": "Conectamos os melhores profissionais às necessidades específicas do seu negócio.",
+        "items": ["Cedência de mão de obra", "Consultoria de RH"]
       }
     }
   },
@@ -632,6 +627,68 @@
           "content": "Estes Termos de Uso são regidos e interpretados de acordo com as leis da República de Moçambique. Qualquer litígio resultante da utilização deste website será submetido à jurisdição exclusiva dos tribunais competentes da cidade de Maputo, renunciando o utilizador a qualquer outro foro por mais privilegiado que seja."
         }
       ]
+    }
+  },
+  "employmentAgencyPage": {
+    "header": {
+      "tag": "Gestão de Talentos",
+      "title1": "Agência Privada de",
+      "title2": "Emprego",
+      "desc": "Conectamos talentos às necessidades da sua empresa. Serviços especializados em cedência de mão de obra e consultoria de recursos humanos para potenciar o seu negócio."
+    },
+    "services": {
+      "tag": "Nossos Serviços",
+      "items": {
+        "outsourcing": {
+          "title": "Cedência de Mão de Obra",
+          "desc": "Fornecemos profissionais qualificados e não qualificados para projetos temporários ou permanentes. Reduza custos operacionais e encargos administrativos enquanto garantimos a conformidade legal e a gestão de contratos de trabalho.",
+          "bullets": [
+            "Flexibilidade contratual",
+            "Gestão de folhas de pagamento e impostos",
+            "Rapidez na alocação de equipas"
+          ]
+        },
+        "consulting": {
+          "title": "Consultoria de RH",
+          "desc": "Apoiamos o desenvolvimento organizacional da sua empresa. Desde o recrutamento e seleção especializados, formação, avaliação de desempenho, até ao desenvolvimento de políticas de RH alinhadas com a legislação moçambicana.",
+          "bullets": [
+            "Recrutamento Especializado",
+            "Formação e Desenvolvimento",
+            "Auditoria de Recursos Humanos"
+          ]
+        }
+      }
+    },
+    "stats": {
+      "workers": "+500 Trabalhadores",
+      "workersDesc": "Colocados anualmente no mercado nacional.",
+      "satisfaction": "98% Retenção",
+      "satisfactionDesc": "Elevado sucesso na adequação aos projetos.",
+      "experience": "+10 Anos",
+      "experienceDesc": "Experiência sólida na gestão de pessoas."
+    },
+    "process": {
+      "title1": "O Nosso",
+      "title2": "Processo",
+      "desc": "Uma metodologia rigorosa para garantir o 'match' perfeito entre talento e empresa.",
+      "step1": { "title": "Avaliação", "desc": "Mapeamento rigoroso das necessidades e cultura da sua empresa." },
+      "step2": { "title": "Triagem", "desc": "Busca ativa e análise na nossa vasta rede de profissionais." },
+      "step3": { "title": "Seleção", "desc": "Entrevistas, testes de competências e verificação de referências." },
+      "step4": { "title": "Integração", "desc": "Acompanhamento no onboarding e gestão administrativa contínua." }
+    },
+    "faq": {
+      "title": "Perguntas",
+      "highlight": "Frequentes",
+      "q1": "Quanto tempo demora a colocação de um trabalhador?",
+      "a1": "Depende da especificidade do perfil, mas tipicamente conseguimos alocar perfis operacionais em 5 a 10 dias úteis.",
+      "q2": "Fazem recrutamento para todas as províncias?",
+      "a2": "Sim, temos a capacidade logística e a rede necessárias para recrutar e colocar pessoal em todo o território nacional.",
+      "q3": "Como gerem a conformidade legal e o Payroll?",
+      "a3": "Na Cedência de Mão de Obra, assumimos toda a carga administrativa: contratos, inscrições no INSS, seguros obrigatórios e processamento salarial."
+    },
+    "cta": {
+      "title": "Precisa de reforçar a sua equipa hoje?",
+      "button": "Solicitar Proposta"
     }
   }
 }

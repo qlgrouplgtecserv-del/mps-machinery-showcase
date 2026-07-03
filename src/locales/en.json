@@ -2,8 +2,9 @@
   "navbar": {
     "home": "Home",
     "about": "About Us",
-    "dredging": "Dredging",
-    "heavyEquipment": "Heavy Equipment",
+    "pecas": "Parts & Equipment",
+    "servicos": "Specialized Services",
+    "recrutamento": "Recruitment Agency",
     "contact": "Contact"
   },
   "hero": {
@@ -44,28 +45,22 @@
     "specialBadge": "SPECIAL FEATURE",
     "tabs": {
       "pecas": {
-        "label": "Heavy Parts",
-        "title": "Parts for Heavy Equipment",
-        "desc": "We supply genuine and aftermarket components for the world's leading brands of heavy equipment.",
-        "items": ["Engine Parts", "Hydraulic Systems", "Transmission", "Filtration", "Cooling", "Ground Engaging Tools (GET)", "Wear Parts", "Electrical Components"]
+        "label": "Parts & Equip.",
+        "title": "Industrial Parts and Equipment",
+        "desc": "We supply genuine components and high-performance equipment for heavy industry.",
+        "items": ["Heavy Parts", "Tires", "Batteries", "Railway"]
       },
-      "pneus": {
-        "label": "Tires",
-        "title": "Industrial Tires",
-        "desc": "High-performance tires for mining, construction, and logistics operations from the best global brands.",
-        "items": ["Bridgestone", "Firestone", "Goodyear", "Michelin", "OTR Tires", "Truck Tires", "Forklift Tires", "Retreading"]
+      "servicos": {
+        "label": "Specialized Services",
+        "title": "Specialized Solutions",
+        "desc": "We offer excellent technical support for complex and large-scale industrial operations.",
+        "items": ["Dredging", "Vehicle Maintenance", "Metalwork"]
       },
-      "baterias": {
-        "label": "Batteries",
-        "title": "Industrial Batteries",
-        "desc": "Starter and deep cycle batteries for heavy equipment, commercial vehicles, and stationary applications.",
-        "items": ["Varta", "Energizer", "GS Yuasa", "Optima", "Bosch", "Exide", "Deep Cycle Batteries", "Starter Batteries"]
-      },
-      "ferrovia": {
-        "label": "Railway",
-        "title": "Railway Solutions",
-        "desc": "Complete solutions for railway infrastructure and rolling stock, ranging from rails to wagon components.",
-        "items": ["Rails and Accessories", "Sleepers", "Railway Fastenings", "Braking Systems", "Wagon Parts", "Locomotive Batteries", "Wheels and Axles", "Signaling Components"]
+      "recrutamento": {
+        "label": "Recruitment Agency",
+        "title": "Recruitment Agency",
+        "desc": "We connect the best professionals to the specific needs of your business.",
+        "items": ["Labor Supply", "HR Consulting"]
       }
     }
   },
@@ -632,6 +627,68 @@
           "content": "These Terms of Use are governed by and construed in accordance with the laws of the Republic of Mozambique. Any dispute arising from the use of this website shall be subject to the exclusive jurisdiction of the competent courts of the city of Maputo, with the user waiving any other jurisdiction, however privileged it may be."
         }
       ]
+    }
+  },
+  "employmentAgencyPage": {
+    "header": {
+      "tag": "Talent Management",
+      "title1": "Private Employment",
+      "title2": "Agency",
+      "desc": "Connecting talent to your company's needs. Specialized services in labor supply and human resources consulting to boost your business."
+    },
+    "services": {
+      "tag": "Our Services",
+      "items": {
+        "outsourcing": {
+          "title": "Labor Supply",
+          "desc": "We provide skilled and unskilled professionals for temporary or permanent projects. Reduce operational costs and administrative burdens while we ensure legal compliance and employment contract management.",
+          "bullets": [
+            "Contractual flexibility",
+            "Payroll and tax management",
+            "Fast team allocation"
+          ]
+        },
+        "consulting": {
+          "title": "HR Consulting",
+          "desc": "We support your company's organizational development. From specialized recruitment and selection, training, performance evaluation, to the development of HR policies aligned with Mozambican legislation.",
+          "bullets": [
+            "Specialized Recruitment",
+            "Training and Development",
+            "Human Resources Auditing"
+          ]
+        }
+      }
+    },
+    "stats": {
+      "workers": "+500 Workers",
+      "workersDesc": "Placed annually in the national market.",
+      "satisfaction": "98% Retention",
+      "satisfactionDesc": "High success rate in project matching.",
+      "experience": "+10 Years",
+      "experienceDesc": "Solid experience in people management."
+    },
+    "process": {
+      "title1": "Our",
+      "title2": "Process",
+      "desc": "A rigorous methodology to ensure the perfect match between talent and company.",
+      "step1": { "title": "Assessment", "desc": "Rigorous mapping of your company's needs and culture." },
+      "step2": { "title": "Sourcing", "desc": "Active search and analysis within our vast network of professionals." },
+      "step3": { "title": "Selection", "desc": "Interviews, skills testing, and reference checks." },
+      "step4": { "title": "Onboarding", "desc": "Follow-up during integration and continuous administrative management." }
+    },
+    "faq": {
+      "title": "Frequently Asked",
+      "highlight": "Questions",
+      "q1": "How long does it take to place a worker?",
+      "a1": "It depends on the specificity of the profile, but typically we can allocate operational profiles in 5 to 10 business days.",
+      "q2": "Do you recruit for all provinces?",
+      "a2": "Yes, we have the logistical capacity and network necessary to recruit and place personnel throughout the national territory.",
+      "q3": "How do you manage legal compliance and Payroll?",
+      "a3": "In Labor Supply, we assume all the administrative burden: contracts, INSS registrations, mandatory insurance, and payroll processing."
+    },
+    "cta": {
+      "title": "Need to reinforce your team today?",
+      "button": "Request Proposal"
     }
   }
 }
