@@ -94,7 +94,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop */}
-        <div className="hidden lg:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-0 xl:gap-1">
           {links.map((l, i) => (
             <motion.div 
               key={l.href} 
@@ -104,7 +104,7 @@ const Navbar = () => {
             >
               <Link 
                 to={l.href}
-                className={`px-4 py-2 text-sm font-bold transition-all relative group drop-shadow-md ${scrolled ? "text-muted-foreground hover:text-primary" : "text-white/90 hover:text-white"}`}
+                className={`px-1.5 lg:text-[11px] xl:text-xs 2xl:text-sm font-bold transition-all relative group drop-shadow-md whitespace-nowrap ${scrolled ? "text-muted-foreground hover:text-primary" : "text-white/90 hover:text-white"}`}
               >
                 {l.label}
                 <span className="absolute bottom-1 left-4 right-4 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
@@ -116,20 +116,20 @@ const Navbar = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="flex items-center ml-2"
+            className="flex items-center ml-1 xl:ml-2"
           >
             {/* Language Switcher */}
             <button 
               onClick={toggleLanguage}
-              className={`flex items-center gap-2 px-3 py-2 rounded-lg font-bold text-sm transition-colors mr-2 ${scrolled ? "bg-slate-100 text-slate-800 hover:bg-slate-200" : "bg-white/10 text-white hover:bg-white/20"}`}
+              className={`flex items-center gap-1.5 px-2 py-1.5 rounded-lg font-bold text-[11px] xl:text-xs 2xl:text-sm transition-colors mr-1 xl:mr-2 ${scrolled ? "bg-slate-100 text-slate-800 hover:bg-slate-200" : "bg-white/10 text-white hover:bg-white/20"}`}
             >
-              <Globe size={16} />
+              <Globe size={14} />
               {(i18n.language?.substring(0, 2) || 'en').toUpperCase()}
             </button>
 
             <Link 
               to="/contato"
-              className="bg-secondary text-secondary-foreground px-6 py-2.5 rounded-md text-sm font-black uppercase tracking-wider hover:brightness-110 transition-all hover:shadow-xl hover:shadow-secondary/30 active:scale-95 shadow-md inline-block"
+              className="bg-secondary text-secondary-foreground px-3 py-1.5 xl:px-4 xl:py-2 rounded-md text-[10px] xl:text-xs 2xl:text-sm font-black uppercase tracking-wider hover:brightness-110 transition-all hover:shadow-xl hover:shadow-secondary/30 active:scale-95 shadow-md inline-block whitespace-nowrap"
             >
               {t('hero.ctaQuote')}
             </Link>
