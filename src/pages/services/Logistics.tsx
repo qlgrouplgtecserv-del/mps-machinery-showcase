@@ -5,6 +5,10 @@ import { motion } from "framer-motion";
 import { Truck, Warehouse, Ship, Check, ChevronDown, Map, ShieldAlert, Navigation } from "lucide-react";
 import { useState } from "react";
 import imgLogistics from "@/assets/logistica/logistics_hero.png";
+import feat1 from "@/assets/logistica/feat1.png";
+import feat2 from "@/assets/logistica/feat2.png";
+import feat3 from "@/assets/logistica/feat3.png";
+import feat4 from "@/assets/logistica/feat4.png";
 import { useTranslation } from "react-i18next";
 
 const LogisticsService = () => {
@@ -61,8 +65,8 @@ const LogisticsService = () => {
         </div>
       </div>
 
-      {/* Features Section */}
-      <section className="py-24 bg-slate-50 relative overflow-hidden">
+      {/* Features Section - Image + Text Blocks */}
+      <section className="py-24 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="font-display text-3xl md:text-5xl font-bold mb-4 text-foreground">
@@ -73,48 +77,83 @@ const LogisticsService = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10 max-w-6xl mx-auto">
-            {/* Step 1 */}
-            <motion.div 
-              whileHover={{ y: -10 }}
-              className="bg-white rounded-3xl p-8 shadow-xl border border-border text-center relative"
-            >
-              <div className="w-20 h-20 bg-slate-900 rounded-2xl flex items-center justify-center text-primary mx-auto -mt-16 mb-6 shadow-lg shadow-slate-900/20 border-4 border-white">
-                <Truck size={32} />
+          <div className="space-y-24 max-w-6xl mx-auto">
+            {/* Block 1 */}
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="w-full md:w-1/2">
+                <img src={feat1} alt="Transporte" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" />
               </div>
-              <h3 className="font-display text-2xl font-bold mb-4">{t('logisticsPage.features.f1')}</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                {t('logisticsPage.features.f1_desc')}
-              </p>
-            </motion.div>
+              <div className="w-full md:w-1/2 space-y-6">
+                <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center text-primary shadow-lg">
+                  <Truck size={28} />
+                </div>
+                <h3 className="font-display text-3xl font-bold">{t('logisticsPage.features.f1')}</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  {t('logisticsPage.features.f1_desc')}
+                </p>
+              </div>
+            </div>
 
-            {/* Step 2 */}
-            <motion.div 
-              whileHover={{ y: -10 }}
-              className="bg-white rounded-3xl p-8 shadow-xl border border-border text-center relative"
-            >
-              <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center text-slate-900 mx-auto -mt-16 mb-6 shadow-lg shadow-primary/30 border-4 border-white">
-                <Warehouse size={32} />
+            {/* Block 2 (Reversed) */}
+            <div className="flex flex-col md:flex-row-reverse items-center gap-12">
+              <div className="w-full md:w-1/2">
+                <img src={feat2} alt="Armazenamento" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" />
               </div>
-              <h3 className="font-display text-2xl font-bold mb-4">{t('logisticsPage.features.f2')}</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                {t('logisticsPage.features.f2_desc')}
-              </p>
-            </motion.div>
+              <div className="w-full md:w-1/2 space-y-6">
+                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center text-slate-900 shadow-lg">
+                  <Warehouse size={28} />
+                </div>
+                <h3 className="font-display text-3xl font-bold">{t('logisticsPage.features.f2')}</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  {t('logisticsPage.features.f2_desc')}
+                </p>
+              </div>
+            </div>
 
-            {/* Step 3 */}
-            <motion.div 
-              whileHover={{ y: -10 }}
-              className="bg-white rounded-3xl p-8 shadow-xl border border-border text-center relative"
-            >
-              <div className="w-20 h-20 bg-slate-900 rounded-2xl flex items-center justify-center text-primary mx-auto -mt-16 mb-6 shadow-lg shadow-slate-900/20 border-4 border-white">
-                <Ship size={32} />
+            {/* Block 3 */}
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="w-full md:w-1/2">
+                <img src={feat3} alt="Gestão Portuária" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" />
               </div>
-              <h3 className="font-display text-2xl font-bold mb-4">{t('logisticsPage.features.f3')}</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                {t('logisticsPage.features.f3_desc')}
-              </p>
-            </motion.div>
+              <div className="w-full md:w-1/2 space-y-6">
+                <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center text-primary shadow-lg">
+                  <Ship size={28} />
+                </div>
+                <h3 className="font-display text-3xl font-bold">{t('logisticsPage.features.f3')}</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  {t('logisticsPage.features.f3_desc')}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Gallery Section */}
+      <section className="py-24 bg-slate-900">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="font-display text-3xl md:text-5xl font-bold mb-4 text-white">
+              Galeria de <span className="text-primary">Operações</span>
+            </h2>
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+              Imagens reais da nossa capacidade de atuação no terreno.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+            <div className="overflow-hidden rounded-2xl group relative h-64">
+              <img src={feat1} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 1"/>
+            </div>
+            <div className="overflow-hidden rounded-2xl group relative h-64">
+              <img src={feat2} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 2"/>
+            </div>
+            <div className="overflow-hidden rounded-2xl group relative h-64">
+              <img src={feat3} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 3"/>
+            </div>
+            <div className="overflow-hidden rounded-2xl group relative h-64">
+              <img src={feat4} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 4"/>
+            </div>
           </div>
         </div>
       </section>

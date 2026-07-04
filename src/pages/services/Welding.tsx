@@ -5,6 +5,10 @@ import { motion } from "framer-motion";
 import { Flame, Hammer, Anchor, Check, ChevronDown, Search, Sparkles, Activity } from "lucide-react";
 import { useState } from "react";
 import imgWelding from "@/assets/serralharia/welding_hero.png";
+import feat1 from "@/assets/serralharia/feat1.png";
+import feat2 from "@/assets/serralharia/feat2.png";
+import feat3 from "@/assets/serralharia/feat3.png";
+import feat4 from "@/assets/serralharia/feat4.png";
 import { useTranslation } from "react-i18next";
 
 const WeldingService = () => {
@@ -61,7 +65,7 @@ const WeldingService = () => {
         </div>
       </div>
 
-      {/* Features Section */}
+      {/* Features Section - Image + Text Blocks */}
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
@@ -73,48 +77,83 @@ const WeldingService = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10 max-w-6xl mx-auto">
-            {/* Step 1 */}
-            <motion.div 
-              whileHover={{ y: -10 }}
-              className="bg-white rounded-3xl p-8 shadow-xl border border-border text-center relative"
-            >
-              <div className="w-20 h-20 bg-slate-900 rounded-2xl flex items-center justify-center text-primary mx-auto -mt-16 mb-6 shadow-lg shadow-slate-900/20 border-4 border-white">
-                <Flame size={32} />
+          <div className="space-y-24 max-w-6xl mx-auto">
+            {/* Block 1 */}
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="w-full md:w-1/2">
+                <img src={feat1} alt="Processos de Soldadura" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" />
               </div>
-              <h3 className="font-display text-2xl font-bold mb-4">{t('weldingPage.features.f1')}</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                {t('weldingPage.features.f1_desc')}
-              </p>
-            </motion.div>
+              <div className="w-full md:w-1/2 space-y-6">
+                <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center text-primary shadow-lg">
+                  <Flame size={28} />
+                </div>
+                <h3 className="font-display text-3xl font-bold">{t('weldingPage.features.f1')}</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  {t('weldingPage.features.f1_desc')}
+                </p>
+              </div>
+            </div>
 
-            {/* Step 2 */}
-            <motion.div 
-              whileHover={{ y: -10 }}
-              className="bg-white rounded-3xl p-8 shadow-xl border border-border text-center relative"
-            >
-              <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center text-slate-900 mx-auto -mt-16 mb-6 shadow-lg shadow-primary/30 border-4 border-white">
-                <Hammer size={32} />
+            {/* Block 2 (Reversed) */}
+            <div className="flex flex-col md:flex-row-reverse items-center gap-12">
+              <div className="w-full md:w-1/2">
+                <img src={feat2} alt="Fabrico Metálico" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" />
               </div>
-              <h3 className="font-display text-2xl font-bold mb-4">{t('weldingPage.features.f2')}</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                {t('weldingPage.features.f2_desc')}
-              </p>
-            </motion.div>
+              <div className="w-full md:w-1/2 space-y-6">
+                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center text-slate-900 shadow-lg">
+                  <Hammer size={28} />
+                </div>
+                <h3 className="font-display text-3xl font-bold">{t('weldingPage.features.f2')}</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  {t('weldingPage.features.f2_desc')}
+                </p>
+              </div>
+            </div>
 
-            {/* Step 3 */}
-            <motion.div 
-              whileHover={{ y: -10 }}
-              className="bg-white rounded-3xl p-8 shadow-xl border border-border text-center relative"
-            >
-              <div className="w-20 h-20 bg-slate-900 rounded-2xl flex items-center justify-center text-primary mx-auto -mt-16 mb-6 shadow-lg shadow-slate-900/20 border-4 border-white">
-                <Anchor size={32} />
+            {/* Block 3 */}
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="w-full md:w-1/2">
+                <img src={feat3} alt="Reparação Naval" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" />
               </div>
-              <h3 className="font-display text-2xl font-bold mb-4">{t('weldingPage.features.f3')}</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                {t('weldingPage.features.f3_desc')}
-              </p>
-            </motion.div>
+              <div className="w-full md:w-1/2 space-y-6">
+                <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center text-primary shadow-lg">
+                  <Anchor size={28} />
+                </div>
+                <h3 className="font-display text-3xl font-bold">{t('weldingPage.features.f3')}</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  {t('weldingPage.features.f3_desc')}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Gallery Section */}
+      <section className="py-24 bg-slate-900">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="font-display text-3xl md:text-5xl font-bold mb-4 text-white">
+              Galeria de <span className="text-primary">Trabalhos</span>
+            </h2>
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+              O resultado do nosso compromisso com a excelência técnica.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+            <div className="overflow-hidden rounded-2xl group relative h-64">
+              <img src={feat1} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 1"/>
+            </div>
+            <div className="overflow-hidden rounded-2xl group relative h-64">
+              <img src={feat2} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 2"/>
+            </div>
+            <div className="overflow-hidden rounded-2xl group relative h-64">
+              <img src={feat3} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 3"/>
+            </div>
+            <div className="overflow-hidden rounded-2xl group relative h-64">
+              <img src={feat4} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Galeria 4"/>
+            </div>
           </div>
         </div>
       </section>
