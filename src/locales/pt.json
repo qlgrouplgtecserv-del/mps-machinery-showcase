@@ -5,6 +5,8 @@
     "pecas": "Peças e Equipamentos",
     "servicos": "Serviços Especializados",
     "recrutamento": "Agência de Recrutamento",
+    "logistica": "Logística",
+    "serralharia": "Serralharia e Soldadura",
     "contact": "Contato"
   },
   "hero": {
@@ -689,6 +691,104 @@
     "cta": {
       "title": "Precisa de reforçar a sua equipa hoje?",
       "button": "Solicitar Proposta"
+    }
+  },
+  "logisticsPage": {
+    "header": {
+      "tag": "SERVIÇOS ESPECIALIZADOS",
+      "title1": "Logística",
+      "title2": "Integrada",
+      "desc": "Soluções completas de transporte, armazenamento e gestão de cadeia de suprimentos para otimizar suas operações industriais e portuárias."
+    },
+    "features": {
+      "title1": "Nossos",
+      "title2": "Serviços",
+      "desc": "Oferecemos transporte de equipamentos pesados, gestão de armazéns e coordenação logística eficiente.",
+      "f1": "Transporte Pesado",
+      "f1_desc": "Frota especializada para movimentação de máquinas de grande porte.",
+      "f2": "Armazenamento",
+      "f2_desc": "Instalações seguras e estratégicas para estocagem de equipamentos.",
+      "f3": "Gestão Portuária",
+      "f3_desc": "Coordenação de carga e descarga nos principais portos."
+    },
+    "table": {
+      "title1": "Capacidade da",
+      "title2": "Nossa Frota",
+      "desc": "Conheça os equipamentos que garantem a movimentação segura e eficiente da sua carga pesada em todo o território nacional.",
+      "col1": "Tipo de Equipamento",
+      "col2": "Capacidade Máxima",
+      "col3": "Aplicações Principais",
+      "row1": { "c1": "Cavalos Mecânicos (Heavy Haulers)", "c2": "Até 120 Toneladas", "c3": "Transporte de Escavadoras, Transformadores e Módulos Industriais" },
+      "row2": { "c1": "Pranchas Rebaixadas (Lowbeds)", "c2": "30 a 80 Toneladas", "c3": "Máquinas com excesso de altura e tratores de esteira" },
+      "row3": { "c1": "Empilhadoras Portuárias (Reach Stackers)", "c2": "Até 45 Toneladas", "c3": "Movimentação de contentores cheios e peças de grande porte em terminais" },
+      "row4": { "c1": "Camiões Grua (Hiabs)", "c2": "Até 15 Toneladas", "c3": "Carga e descarga autónoma de geradores, bombas e peças sobressalentes" }
+    },
+    "steps": {
+      "title1": "Processo",
+      "title2": "Logístico",
+      "desc": "Planeamento rigoroso para garantir que o seu equipamento chegue ao destino no prazo e em segurança absoluta.",
+      "step1": { "title": "1. Planeamento de Rota", "desc": "Análise de viabilidade das estradas, limites de peso em pontes e obtenção de licenças especiais junto das autoridades." },
+      "step2": { "title": "2. Escolta e Segurança", "desc": "Organização de batedores e viaturas de escolta credenciadas para garantir trânsito livre e seguro de cargas superdimensionadas." },
+      "step3": { "title": "3. Execução e Rastreio", "desc": "Transporte monitorizado via GPS em tempo real desde a origem até ao descarregamento final no site de operação." }
+    },
+    "faq": {
+      "title": "Perguntas",
+      "highlight": "Frequentes",
+      "q1": "Fazem transporte para minas em zonas remotas?",
+      "a1": "Sim, temos experiência e frota adaptada para entregar peças e equipamentos nas províncias mais remotas, incluindo acessos difíceis (off-road).",
+      "q2": "Tratam do desalfandegamento de equipamentos importados?",
+      "a2": "Sim, a nossa equipa coordena todo o processo aduaneiro nos portos de Maputo, Beira e Nacala, minimizando o tempo de retenção da carga.",
+      "q3": "Qual é a capacidade de armazenamento que oferecem?",
+      "a3": "Possuímos pátios de armazenagem para máquinas pesadas e armazéns cobertos para peças sensíveis, com vigilância 24/7."
+    }
+  },
+  "weldingPage": {
+    "header": {
+      "tag": "FABRICO E MANUTENÇÃO",
+      "title1": "Serralharia e",
+      "title2": "Soldadura",
+      "desc": "Serviços especializados de soldadura industrial, fabrico de estruturas metálicas e manutenção de equipamentos pesados com padrões de alta qualidade."
+    },
+    "features": {
+      "title1": "Nossas",
+      "title2": "Especialidades",
+      "desc": "Profissionais qualificados para as mais exigentes tarefas de fabricação e reparação.",
+      "f1": "Soldadura Especializada",
+      "f1_desc": "Soldadura MIG, TIG e eletrodo revestido para estruturas críticas.",
+      "f2": "Fabrico Metálico",
+      "f2_desc": "Construção de componentes e estruturas à medida das necessidades.",
+      "f3": "Reparação Naval",
+      "f3_desc": "Manutenção e soldadura em embarcações e dragas."
+    },
+    "table": {
+      "title1": "Capacidades de",
+      "title2": "Soldadura e Corte",
+      "desc": "Trabalhamos com os métodos mais avançados do mercado para garantir uniões duradouras, mesmo nos ambientes operacionais mais severos.",
+      "col1": "Processo",
+      "col2": "Materiais Compatíveis",
+      "col3": "Aplicações Típicas",
+      "row1": { "c1": "Soldadura TIG (GTAW)", "c2": "Aço Inox, Alumínio, Ligas Especiais", "c3": "Tubagens de alta pressão, componentes de precisão e reparação de blocos de motor" },
+      "row2": { "c1": "Soldadura MIG/MAG (GMAW)", "c2": "Aço Carbono, Aços Estruturais", "c3": "Fabrico rápido de suportes, chassis de dumpers e componentes de desgaste" },
+      "row3": { "c1": "Eletrodo Revestido (SMAW)", "c2": "Aço Fundido, Ferro Fundido, Ligas Duras", "c3": "Reparações de emergência em campo (minas/obras) e preenchimento de dentes de escavadoras" },
+      "row4": { "c1": "Corte Plasma e Oxicorte", "c2": "Aço e Metais Ferrosos até 100mm", "c3": "Desmantelamento de estruturas, preparação de chapas grossas para baldes de dragagem" }
+    },
+    "steps": {
+      "title1": "O Nosso",
+      "title2": "Método de Trabalho",
+      "desc": "Da inspeção inicial até aos testes não destrutivos finais, a qualidade é inegociável.",
+      "step1": { "title": "1. Inspeção e Preparação", "desc": "Análise da trinca ou falha estrutural, limpeza rigorosa da área e chanframento profissional das bordas para penetração total da solda." },
+      "step2": { "title": "2. Execução da Soldadura", "desc": "Controlo rigoroso da temperatura de pré-aquecimento e soldadura realizada por profissionais certificados utilizando os consumíveis adequados." },
+      "step3": { "title": "3. Ensaios Não Destrutivos", "desc": "Inspeção visual detalhada, testes de líquidos penetrantes ou ultrassom para garantir a ausência de porosidades ou fissuras internas." }
+    },
+    "faq": {
+      "title": "Perguntas",
+      "highlight": "Frequentes",
+      "q1": "Fazemos reparações no terreno (on-site)?",
+      "a1": "Sim, possuímos unidades móveis de soldadura totalmente equipadas com geradores próprios para reparações urgentes em estaleiros ou minas.",
+      "q2": "Qualificações dos soldadores?",
+      "a2": "Todos os nossos soldadores possuem certificações internacionais e vasta experiência na reparação de equipamentos CAT, Komatsu e dragas marítimas.",
+      "q3": "Fabricam peças estruturais à medida?",
+      "a3": "Sim, a nossa serralharia fabrica desde corrimãos e escadas industriais até componentes de reforço estrutural para pontões e dragas."
     }
   }
 }

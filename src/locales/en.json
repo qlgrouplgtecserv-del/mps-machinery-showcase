@@ -5,6 +5,8 @@
     "pecas": "Parts & Equipment",
     "servicos": "Specialized Services",
     "recrutamento": "Recruitment Agency",
+    "logistica": "Logistics",
+    "serralharia": "Welding & Metalwork",
     "contact": "Contact"
   },
   "hero": {
@@ -689,6 +691,104 @@
     "cta": {
       "title": "Need to reinforce your team today?",
       "button": "Request Proposal"
+    }
+  },
+  "logisticsPage": {
+    "header": {
+      "tag": "SPECIALIZED SERVICES",
+      "title1": "Integrated",
+      "title2": "Logistics",
+      "desc": "Complete transportation, storage, and supply chain management solutions to optimize your industrial and port operations."
+    },
+    "features": {
+      "title1": "Our",
+      "title2": "Services",
+      "desc": "We offer heavy equipment transportation, warehouse management, and efficient logistics coordination.",
+      "f1": "Heavy Transportation",
+      "f1_desc": "Specialized fleet for moving large machinery.",
+      "f2": "Storage & Warehousing",
+      "f2_desc": "Secure and strategic facilities for equipment storage.",
+      "f3": "Port Management",
+      "f3_desc": "Coordination of loading and unloading at main ports."
+    },
+    "table": {
+      "title1": "Our Fleet",
+      "title2": "Capacity",
+      "desc": "Discover the equipment that ensures the safe and efficient handling of your heavy cargo across the country.",
+      "col1": "Equipment Type",
+      "col2": "Maximum Capacity",
+      "col3": "Main Applications",
+      "row1": { "c1": "Heavy Haulers", "c2": "Up to 120 Tons", "c3": "Transporting excavators, transformers, and industrial modules" },
+      "row2": { "c1": "Lowbeds", "c2": "30 to 80 Tons", "c3": "Over-height machinery and bulldozers" },
+      "row3": { "c1": "Reach Stackers", "c2": "Up to 45 Tons", "c3": "Handling full containers and large parts in terminals" },
+      "row4": { "c1": "Crane Trucks (Hiabs)", "c2": "Up to 15 Tons", "c3": "Autonomous loading and unloading of generators, pumps, and spare parts" }
+    },
+    "steps": {
+      "title1": "Logistics",
+      "title2": "Process",
+      "desc": "Rigorous planning to ensure your equipment reaches its destination on time and in absolute safety.",
+      "step1": { "title": "1. Route Planning", "desc": "Analysis of road feasibility, bridge weight limits, and obtaining special permits from authorities." },
+      "step2": { "title": "2. Escort and Safety", "desc": "Organization of outriders and accredited escort vehicles to ensure free and safe transit of oversized loads." },
+      "step3": { "title": "3. Execution and Tracking", "desc": "Real-time GPS monitored transport from origin to final unloading at the operation site." }
+    },
+    "faq": {
+      "title": "Frequently Asked",
+      "highlight": "Questions",
+      "q1": "Do you transport to mines in remote areas?",
+      "a1": "Yes, we have the experience and an adapted fleet to deliver parts and equipment to the most remote provinces, including difficult access (off-road).",
+      "q2": "Do you handle the customs clearance of imported equipment?",
+      "a2": "Yes, our team coordinates the entire customs process at the ports of Maputo, Beira, and Nacala, minimizing cargo retention time.",
+      "q3": "What storage capacity do you offer?",
+      "a3": "We have storage yards for heavy machinery and covered warehouses for sensitive parts, with 24/7 surveillance."
+    }
+  },
+  "weldingPage": {
+    "header": {
+      "tag": "MANUFACTURING & MAINTENANCE",
+      "title1": "Metalwork &",
+      "title2": "Welding",
+      "desc": "Specialized industrial welding services, metal structure manufacturing, and heavy equipment maintenance with high quality standards."
+    },
+    "features": {
+      "title1": "Our",
+      "title2": "Specialties",
+      "desc": "Qualified professionals for the most demanding manufacturing and repair tasks.",
+      "f1": "Specialized Welding",
+      "f1_desc": "MIG, TIG, and stick welding for critical structures.",
+      "f2": "Metal Fabrication",
+      "f2_desc": "Custom construction of components and structures.",
+      "f3": "Naval Repair",
+      "f3_desc": "Maintenance and welding on vessels and dredgers."
+    },
+    "table": {
+      "title1": "Welding and Cutting",
+      "title2": "Capabilities",
+      "desc": "We work with the most advanced methods in the market to ensure long-lasting joints, even in the harshest operating environments.",
+      "col1": "Process",
+      "col2": "Compatible Materials",
+      "col3": "Typical Applications",
+      "row1": { "c1": "TIG Welding (GTAW)", "c2": "Stainless Steel, Aluminum, Special Alloys", "c3": "High-pressure piping, precision components, and engine block repair" },
+      "row2": { "c1": "MIG/MAG Welding (GMAW)", "c2": "Carbon Steel, Structural Steels", "c3": "Fast fabrication of supports, dumper chassis, and wear components" },
+      "row3": { "c1": "Stick Welding (SMAW)", "c2": "Cast Steel, Cast Iron, Hard Alloys", "c3": "Emergency field repairs (mines/sites) and hardfacing excavator teeth" },
+      "row4": { "c1": "Plasma and Oxy-fuel Cutting", "c2": "Steel and Ferrous Metals up to 100mm", "c3": "Dismantling structures, preparing thick plates for dredging buckets" }
+    },
+    "steps": {
+      "title1": "Our Work",
+      "title2": "Methodology",
+      "desc": "From the initial inspection to final non-destructive testing, quality is non-negotiable.",
+      "step1": { "title": "1. Inspection and Preparation", "desc": "Analysis of the crack or structural failure, rigorous cleaning of the area, and professional edge chamfering for full weld penetration." },
+      "step2": { "title": "2. Welding Execution", "desc": "Strict control of preheating temperature and welding performed by certified professionals using the appropriate consumables." },
+      "step3": { "title": "3. Non-Destructive Testing", "desc": "Detailed visual inspection, dye penetrant or ultrasonic testing to ensure the absence of internal porosity or cracks." }
+    },
+    "faq": {
+      "title": "Frequently Asked",
+      "highlight": "Questions",
+      "q1": "Do you do on-site repairs?",
+      "a1": "Yes, we have fully equipped mobile welding units with their own generators for urgent repairs at sites or mines.",
+      "q2": "What are your welders' qualifications?",
+      "a2": "All our welders have international certifications and extensive experience repairing CAT, Komatsu equipment, and marine dredgers.",
+      "q3": "Do you manufacture custom structural parts?",
+      "a3": "Yes, our metalwork shop manufactures everything from industrial handrails and stairs to structural reinforcement components for pontoons and dredgers."
     }
   }
 }

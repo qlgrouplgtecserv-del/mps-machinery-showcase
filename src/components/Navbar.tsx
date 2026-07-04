@@ -21,6 +21,8 @@ const Navbar = () => {
     { label: t('navbar.pecas'), href: "/servicos/equipamentos-pesados" },
     { label: t('navbar.servicos'), href: "/servicos/dragagem" },
     { label: t('navbar.recrutamento'), href: "/servicos/agencia-emprego" },
+    { label: t('navbar.logistica'), href: "/servicos/logistica" },
+    { label: t('navbar.serralharia'), href: "/servicos/serralharia-soldadura" },
     { label: t('navbar.contact'), href: "/contato" },
   ];
 
@@ -61,6 +63,14 @@ const Navbar = () => {
                 <Link to="/servicos/agencia-emprego" className="flex items-center gap-2 bg-emerald-600 text-white px-4 py-2 rounded-full text-xs font-black uppercase tracking-wider shadow-md hover:scale-105 transition-transform">
                   <span className="text-sm">👆</span>
                   {t('navbar.recrutamento')}
+                </Link>
+                <Link to="/servicos/logistica" className="flex items-center gap-2 bg-orange-600 text-white px-4 py-2 rounded-full text-xs font-black uppercase tracking-wider shadow-md hover:scale-105 transition-transform">
+                  <span className="text-sm">👆</span>
+                  {t('navbar.logistica')}
+                </Link>
+                <Link to="/servicos/serralharia-soldadura" className="flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full text-xs font-black uppercase tracking-wider shadow-md hover:scale-105 transition-transform">
+                  <span className="text-sm">👆</span>
+                  {t('navbar.serralharia')}
                 </Link>
               </div>
             ))}

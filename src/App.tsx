@@ -9,6 +9,8 @@ import Contact from "./pages/Contact.tsx";
 import DredgingService from "./pages/services/Dredging.tsx";
 import HeavyEquipmentService from "./pages/services/HeavyEquipment.tsx";
 import EmploymentAgencyService from "./pages/services/EmploymentAgency.tsx";
+import LogisticsService from "./pages/services/Logistics.tsx";
+import WeldingService from "./pages/services/Welding.tsx";
 import Privacy from "./pages/Privacy.tsx";
 import Terms from "./pages/Terms.tsx";
 import NotFound from "./pages/NotFound.tsx";
@@ -31,6 +33,8 @@ const App = () => (
           <Route path="/servicos/dragagem" element={<DredgingService />} />
           <Route path="/servicos/equipamentos-pesados" element={<HeavyEquipmentService />} />
           <Route path="/servicos/agencia-emprego" element={<EmploymentAgencyService />} />
+          <Route path="/servicos/logistica" element={<LogisticsService />} />
+          <Route path="/servicos/serralharia-soldadura" element={<WeldingService />} />
           <Route path="/privacidade" element={<Privacy />} />
           <Route path="/termos" element={<Terms />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
